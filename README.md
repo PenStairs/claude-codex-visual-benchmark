@@ -19,15 +19,9 @@ One real prompt. Two isolated agents. Visual proof you can replay.
 
 <img src="assets/readme/benchmark-highlights.jpg" alt="Six selected frames from source videos: procedural 3D world, drowned city, anime street, cyberpunk racing, investigation board, and Queen Anne's Revenge" width="100%" />
 
-Six frames selected directly from the public source videos—not screenshots of the X interface. They represent [Procedural 3D World](https://x.com/slash1sol/status/2084590501685043400), [Drowned City](https://x.com/emollick/status/2064424775527624736), [Anime Suburban Street](https://x.com/gmi_cloud/status/2080834581247435102), [Cyberpunk Hovercar Racing](https://x.com/eyishazyer/status/2072677773655838950), [Crime Investigation Board](https://x.com/0x0SojalSec/status/2085440893994365214), and [Queen Anne's Revenge](https://x.com/TimJayas/status/2087474534924550433).
+A tour of six standout visual cases: [Procedural 3D World](https://x.com/slash1sol/status/2084590501685043400), [Drowned City](https://x.com/emollick/status/2064424775527624736), [Anime Suburban Street](https://x.com/gmi_cloud/status/2080834581247435102), [Cyberpunk Hovercar Racing](https://x.com/eyishazyer/status/2072677773655838950), [Crime Investigation Board](https://x.com/0x0SojalSec/status/2085440893994365214), and [Queen Anne's Revenge](https://x.com/TimJayas/status/2087474534924550433). Open any title to see the original post.
 
-<sub>Source-media frames captured on 2026-09-03 for prompt discovery and attribution. They are not benchmark results produced by this repository. Media rights remain with the respective creators; inclusion does not imply ownership, endorsement, or independent reproduction.</sub>
-
-### A real run from this project
-
-<img src="assets/readme/sample-military-armory.png" alt="Real GPT-5.6 Sol and Claude Fable 5.1 Three.js military armory comparison frames" width="100%" />
-
-<p align="center"><sub>GPT-5.6 Sol (top) vs Claude Fable 5.1 (bottom), same Three.js prompt and matched capture policy. This real run demonstrates the output format; it is not a universal model ranking.</sub></p>
+<sub>Curated from source media on 2026-09-03 for visual discovery and attribution. Media rights remain with the respective creators; inclusion does not imply ownership or endorsement.</sub>
 
 ## Explore the Benchmark
 
@@ -54,30 +48,6 @@ Six frames selected directly from the public source videos—not screenshots of 
 </table>
 
 [Browse all prompts](docs/prompt-gallery.md) · [Browse all models](docs/model-gallery.md) · [Open the result gallery](docs/benchmark-gallery.md)
-
-## Bring Any Two Models
-
-Every user defines the comparison pair. Use two built-in profiles, add two private profiles, or mix them. A profile declares the model, provider endpoint, authentication class, runner, and reasoning level—so the same underlying model may intentionally have more than one execution profile.
-
-<img src="assets/readme/runner-routing.svg" alt="Model A and Model B select Codex CLI or Claude Code runners and write to isolated workspaces before video merging" width="100%" />
-
-| Runner path | Built-in profiles | Compatible route |
-|---|---:|---|
-| **Codex CLI** | 6 | OpenAI login and Responses-compatible endpoints |
-| **Claude Code** | 5 | Anthropic login and Anthropic-compatible endpoints |
-| **Custom profile** | Unlimited | A tested configuration using either supported runner path |
-
-[Add an OpenAI Responses-compatible model](examples/custom-models/openai-responses-compatible.json) · [Add an Anthropic-compatible model](examples/custom-models/anthropic-compatible.json) · [Read the custom-model guide](docs/add-your-model.md)
-
-## How It Works
-
-<img src="assets/readme/workflow.svg" alt="Same prompt, two agents, isolated workspaces, verification, recording, and one merged video" width="100%" />
-
-**Same prompt → two agents → isolated workspaces → verify → record → merge.**
-
-Both agents receive the same normalized prompt bytes and equivalent clean scaffolds. The benchmark validates each result, captures matched browser motion, and exports one high-quality H.264 comparison video for X. Plan hash, timings, token usage, capture metadata, repairs, retries, and failures remain in the local run report.
-
-The workflow is local-first. Generated code and evidence stay under gitignored `runs/`; credentials stay in native CLI login stores or environment variables. Only a final video is uploaded when the user explicitly chooses to publish it.
 
 ## Prompt Case Library
 
@@ -122,6 +92,30 @@ Every prompt has a visual frame from its source media, a direct X source, exact 
 </table>
 
 <sub>Frames were extracted from public source media on 2026-09-03. Source-linked does not mean independently re-verified; open each detail page for the exact evidence status, engagement snapshot, adaptation notes, and prompt bytes.</sub>
+
+## Bring Any Two Models
+
+Every user defines the comparison pair. Use two built-in profiles, add two private profiles, or mix them. A profile declares the model, provider endpoint, authentication class, runner, and reasoning level—so the same underlying model may intentionally have more than one execution profile.
+
+<img src="assets/readme/runner-routing.svg" alt="Model A and Model B select Codex CLI or Claude Code runners and write to isolated workspaces before video merging" width="100%" />
+
+| Runner path | Built-in profiles | Compatible route |
+|---|---:|---|
+| **Codex CLI** | 6 | OpenAI login and Responses-compatible endpoints |
+| **Claude Code** | 5 | Anthropic login and Anthropic-compatible endpoints |
+| **Custom profile** | Unlimited | A tested configuration using either supported runner path |
+
+[Add an OpenAI Responses-compatible model](examples/custom-models/openai-responses-compatible.json) · [Add an Anthropic-compatible model](examples/custom-models/anthropic-compatible.json) · [Read the custom-model guide](docs/add-your-model.md)
+
+## How It Works
+
+<img src="assets/readme/workflow.svg" alt="Same prompt, two agents, isolated workspaces, verification, recording, and one merged video" width="100%" />
+
+**Same prompt → two agents → isolated workspaces → verify → record → merge.**
+
+Both agents receive the same normalized prompt bytes and equivalent clean scaffolds. The benchmark validates each result, captures matched browser motion, and exports one high-quality H.264 comparison video for X. Plan hash, timings, token usage, capture metadata, repairs, retries, and failures remain in the local run report.
+
+The workflow is local-first. Generated code and evidence stay under gitignored `runs/`; credentials stay in native CLI login stores or environment variables. Only a final video is uploaded when the user explicitly chooses to publish it.
 
 ## Quick Start / Install Skill
 
@@ -180,10 +174,6 @@ Every change is checked against configuration, prompt contracts, timeout behavio
 [![License](https://img.shields.io/badge/license-MIT-e5e7eb?style=flat-square)](LICENSE)
 
 [Discussions](https://github.com/PenStairs/claude-codex-visual-benchmark/discussions) · [Roadmap](ROADMAP.md) · [Latest release](https://github.com/PenStairs/claude-codex-visual-benchmark/releases/latest) · [Changelog](CHANGELOG.md) · [Documentation](docs/README.md)
-
-### Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=PenStairs/claude-codex-visual-benchmark&type=Date)](https://www.star-history.com/#PenStairs/claude-codex-visual-benchmark&Date)
 
 ## Security / Disclaimer / License
 

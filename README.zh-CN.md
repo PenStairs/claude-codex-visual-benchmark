@@ -19,15 +19,9 @@
 
 <img src="assets/readme/benchmark-highlights.jpg" alt="六个精选原帖视频画面：程序化世界、沉没城市、日系街道、赛博朋克竞速、调查板和安妮女王复仇号" width="100%" />
 
-上图直接从公开原帖视频中挑选画面并拼成，没有包含 Tweet 界面。六个案例分别是[程序化 3D 世界](https://x.com/slash1sol/status/2084590501685043400)、[沉没城市](https://x.com/emollick/status/2064424775527624736)、[日系郊区街道](https://x.com/gmi_cloud/status/2080834581247435102)、[赛博朋克悬浮车竞速](https://x.com/eyishazyer/status/2072677773655838950)、[犯罪调查板](https://x.com/0x0SojalSec/status/2085440893994365214)和[安妮女王复仇号](https://x.com/TimJayas/status/2087474534924550433)。
+这里精选了 6 个视觉效果突出的案例：[程序化 3D 世界](https://x.com/slash1sol/status/2084590501685043400)、[沉没城市](https://x.com/emollick/status/2064424775527624736)、[日系郊区街道](https://x.com/gmi_cloud/status/2080834581247435102)、[赛博朋克悬浮车竞速](https://x.com/eyishazyer/status/2072677773655838950)、[犯罪调查板](https://x.com/0x0SojalSec/status/2085440893994365214)和[安妮女王复仇号](https://x.com/TimJayas/status/2087474534924550433)。点击名称可以查看原帖。
 
-<sub>原帖媒体帧采集于 2026-09-03，用于提示词发现和来源说明，不是本仓库运行出来的测评成绩。媒体版权仍属于对应创作者；收录不代表本项目拥有、背书或已独立复现原帖效果。</sub>
-
-### 本项目真实运行样例
-
-<img src="assets/readme/sample-military-armory.png" alt="GPT-5.6 Sol 与 Claude Fable 5.1 的真实 Three.js 军械库对比画面" width="100%" />
-
-<p align="center"><sub>上方 GPT-5.6 Sol，下方 Claude Fable 5.1；两边使用同一条 Three.js 提示词和同一套录制策略。这个真实样例用于展示输出形式，不代表任何模型在所有任务中普遍获胜。</sub></p>
+<sub>素材于 2026-09-03 整理，用于视觉案例展示和来源标注。媒体版权仍属于对应创作者；收录不代表本项目拥有或背书相关内容。</sub>
 
 ## 浏览测评库
 
@@ -54,30 +48,6 @@
 </table>
 
 [浏览全部提示词](docs/prompt-gallery.md) · [查看全部模型](docs/model-gallery.md) · [打开测评结果画廊](docs/benchmark-gallery.md)
-
-## 任意选择两个模型
-
-比较哪两个模型完全由用户决定。可以选两个内置配置、添加两个私有配置，也可以混合使用。“模型配置”会同时声明模型、供应商端点、鉴权类别、Runner 和推理档位，所以同一个底层模型可以有多个不同执行路径。
-
-<img src="assets/readme/runner-routing.svg" alt="模型 A 与模型 B 分别选择 Codex CLI 或 Claude Code Runner，写入隔离工作区后再合并视频" width="100%" />
-
-| Runner 路径 | 内置配置数 | 兼容方式 |
-|---|---:|---|
-| **Codex CLI** | 6 | OpenAI 原生登录、Responses 兼容端点 |
-| **Claude Code** | 5 | Anthropic 原生登录、Anthropic 兼容端点 |
-| **自定义配置** | 不限 | 经过验证、使用上述任一 Runner 的模型配置 |
-
-[添加 OpenAI Responses 兼容模型](examples/custom-models/openai-responses-compatible.json) · [添加 Anthropic 兼容模型](examples/custom-models/anthropic-compatible.json) · [阅读自定义模型说明](docs/add-your-model.zh-CN.md)
-
-## 运行流程
-
-<img src="assets/readme/workflow.svg" alt="同一条提示词、两个 Agent、隔离工作区、验证、录屏和最终合并视频" width="100%" />
-
-**Same prompt → two agents → isolated workspaces → verify → record → merge。**
-
-两个 Agent 接收相同的标准化提示词字节和等价的干净脚手架。系统验证两边项目，按照相同的浏览器运动方式录制，再输出一条适合 X 发布的高清 H.264 对比视频。计划哈希、耗时、Token、录屏参数、修复、重试和失败原因都保留在本地运行报告中。
-
-整个流程默认在本地完成。代码和证据保存在被 Git 忽略的 `runs/`；凭据保留在 CLI 原生登录状态或环境变量里。只有用户明确选择发布时，最终视频才会上传。
 
 ## 每条提示词的案例
 
@@ -122,6 +92,30 @@
 </table>
 
 <sub>画面于 2026-09-03 从公开原帖媒体中提取。“已经关联来源”不等于“本次重新独立核验”。每个详情页会展示准确的证据状态、历史互动快照、改写说明和实际提示词字节。</sub>
+
+## 任意选择两个模型
+
+比较哪两个模型完全由用户决定。可以选两个内置配置、添加两个私有配置，也可以混合使用。“模型配置”会同时声明模型、供应商端点、鉴权类别、Runner 和推理档位，所以同一个底层模型可以有多个不同执行路径。
+
+<img src="assets/readme/runner-routing.svg" alt="模型 A 与模型 B 分别选择 Codex CLI 或 Claude Code Runner，写入隔离工作区后再合并视频" width="100%" />
+
+| Runner 路径 | 内置配置数 | 兼容方式 |
+|---|---:|---|
+| **Codex CLI** | 6 | OpenAI 原生登录、Responses 兼容端点 |
+| **Claude Code** | 5 | Anthropic 原生登录、Anthropic 兼容端点 |
+| **自定义配置** | 不限 | 经过验证、使用上述任一 Runner 的模型配置 |
+
+[添加 OpenAI Responses 兼容模型](examples/custom-models/openai-responses-compatible.json) · [添加 Anthropic 兼容模型](examples/custom-models/anthropic-compatible.json) · [阅读自定义模型说明](docs/add-your-model.zh-CN.md)
+
+## 运行流程
+
+<img src="assets/readme/workflow.svg" alt="同一条提示词、两个 Agent、隔离工作区、验证、录屏和最终合并视频" width="100%" />
+
+**Same prompt → two agents → isolated workspaces → verify → record → merge。**
+
+两个 Agent 接收相同的标准化提示词字节和等价的干净脚手架。系统验证两边项目，按照相同的浏览器运动方式录制，再输出一条适合 X 发布的高清 H.264 对比视频。计划哈希、耗时、Token、录屏参数、修复、重试和失败原因都保留在本地运行报告中。
+
+整个流程默认在本地完成。代码和证据保存在被 Git 忽略的 `runs/`；凭据保留在 CLI 原生登录状态或环境变量里。只有用户明确选择发布时，最终视频才会上传。
 
 ## 快速开始 / 安装 Skill
 
@@ -180,10 +174,6 @@ npx skills add PenStairs/claude-codex-visual-benchmark --global --all --copy
 [![开源协议](https://img.shields.io/badge/license-MIT-e5e7eb?style=flat-square)](LICENSE)
 
 [Discussions](https://github.com/PenStairs/claude-codex-visual-benchmark/discussions) · [Roadmap](ROADMAP.md) · [最新版本](https://github.com/PenStairs/claude-codex-visual-benchmark/releases/latest) · [更新记录](CHANGELOG.md) · [完整文档](docs/README.md)
-
-### Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=PenStairs/claude-codex-visual-benchmark&type=Date)](https://www.star-history.com/#PenStairs/claude-codex-visual-benchmark&Date)
 
 ## 安全 / 免责声明 / 开源协议
 
