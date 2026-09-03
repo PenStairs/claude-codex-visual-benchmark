@@ -14,17 +14,67 @@
 
 让两个 Coding Agent 接收完全相同的真实提示词，在彼此隔离的工作区里完成作品；系统随后验证、录屏，并输出一条上下拼接的对比视频。你看到的是模型真正做出来的东西，而不只是一行分数。
 
-[English](README.md) · [快速开始](docs/quick-start.zh-CN.md) · [模型清单](docs/model-gallery.md) · [提示词画廊](docs/prompt-gallery.md) · [添加自定义模型](docs/add-your-model.zh-CN.md)
+[**浏览提示词**](docs/prompt-gallery.md) · [**查看模型**](docs/model-gallery.md) · [**运行一次对比**](docs/quick-start.zh-CN.md) · [**接入你的模型**](docs/add-your-model.zh-CN.md) · [English](README.md)
 
 </div>
 
-## 不只看分数，直接看作品
+## 值得拿来测模型的视觉提示词
+
+下面四个原帖分别启发了测评库里的四条提示词。它们是经过挑选的来源案例，不是本项目运行出来的测评成绩。点击截图可以直接打开对应的 X 原帖。
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://x.com/emollick/status/2064424775527624736"><img src="assets/readme/x-source-drowned-city.jpg" alt="Ethan Mollick 发布的无限新哥特式沉没城市 Twigl 提示词 X 原帖截图" width="100%" /></a><br />
+      <strong>无限新哥特式沉没城市</strong> · Twigl · 两轮<br />
+      <sub>来源展示：<a href="https://x.com/emollick">@emollick</a></sub><br />
+      <a href="docs/prompts/drowned-city-v1.md">查看原始提示词和来源 →</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://x.com/TimJayas/status/2087474534924550433"><img src="assets/readme/x-source-queen-annes-revenge.jpg" alt="Tim Jayas 发布的安妮女王复仇号 Three.js 提示词 X 原帖截图" width="100%" /></a><br />
+      <strong>安妮女王复仇号</strong> · Three.js<br />
+      <sub>来源展示：<a href="https://x.com/TimJayas">@TimJayas</a></sub><br />
+      <a href="docs/prompts/queen-annes-revenge-v1.md">查看原始提示词和来源 →</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://x.com/Bhavani_00007/status/2077798166729208223"><img src="assets/readme/x-source-military-armory.jpg" alt="Bhavy 发布的写实军械库 Three.js 模型对比 X 原帖截图" width="100%" /></a><br />
+      <strong>写实军械库</strong> · Three.js<br />
+      <sub>来源展示：<a href="https://x.com/Bhavani_00007">@Bhavani_00007</a></sub><br />
+      <a href="docs/prompts/military-armory-v1.md">查看原始提示词和来源 →</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://x.com/karankendre/status/2025624483000963350"><img src="assets/readme/x-source-japanese-castle.jpg" alt="Karan 发布的程序化日本城堡 Three.js 提示词 X 原帖截图" width="100%" /></a><br />
+      <strong>程序化日本城堡</strong> · Three.js<br />
+      <sub>来源展示：<a href="https://x.com/karankendre">@karankendre</a></sub><br />
+      <a href="docs/prompts/japanese-castle-v1.md">查看原始提示词和来源 →</a>
+    </td>
+  </tr>
+</table>
+
+<sub>截图于 2026-09-03 从公开 X Embed 获取。帖子和媒体版权仍属于各自创作者。收录截图是为了说明提示词来源，不代表本项目拥有、背书或已经独立复现原帖中的结果。</sub>
+
+## 本项目的真实测评结果
 
 普通榜单会把模型压缩成一个数字；视觉编程任务能直接暴露构图、交互、运动、细节、运行质量和完成度。本项目把这些差异做成可回放、可查证的视频证据。
 
 <img src="assets/readme/sample-military-armory.png" alt="GPT-5.6 Sol 与 Claude Fable 5.1 的真实 Three.js 军械库对比画面" width="100%" />
 
 <p align="center"><sub>真实运行样例：上方 GPT‑5.6 Sol，下方 Claude Fable 5.1；两边使用同一条 Three.js 提示词和同一套录制策略。这个样例只展示作品差异，不代表任何模型在所有任务中普遍获胜。</sub></p>
+
+## 浏览整个测评库
+
+<img src="assets/readme/explore.svg" alt="浏览 18 条 Three.js 提示词、2 条 Twigl 提示词、11 个模型配置和自定义模型组合" width="100%" />
+
+| 浏览入口 | 里面有什么 | 进入 |
+|---|---|---|
+| **Three.js 世界** | 18 条游戏、建筑、载具、模拟、程序化世界和交互提示词 | [浏览 Three.js 提示词](docs/prompt-gallery.md#threejs) |
+| **Twigl Shader** | 2 条实时 GLSL 提示词，其中一条包含第二轮原文 `Make it better` | [浏览 Twigl 提示词](docs/prompt-gallery.md#twigl) |
+| **模型配置** | 11 个可以直接运行的 Codex CLI 和 Claude Code 配置 | [查看完整模型清单](docs/model-gallery.md) |
+| **测评结果** | 按不同证据要求分开的官方测评与社区测评 | [打开结果画廊](docs/benchmark-gallery.md) |
+
+每个用户都可以自己定义要比较的两个模型。既可以选择内置配置，也可以[接入任意兼容模型](docs/add-your-model.zh-CN.md)；首页不会默认所有人都必须进行某一组固定的 Claude 与 Codex 对比。
 
 ## 这个项目解决什么问题
 
@@ -88,7 +138,7 @@ npx skills add PenStairs/claude-codex-visual-benchmark --global --all --copy
 
 也可以把仓库复制到 Agent 的 Skills 目录，然后让 Agent 使用 `$visual-code-model-benchmark`。Skill 会依次引导你选择两个模型、测评方式、提示词，展示运行计划，并在你明确确认后才开始消耗额度。
 
-## Claude、Codex，以及你自己定义的模型
+## 模型配置与 Runner
 
 “模型配置”不只是模型名，还包括 Runner、端点、鉴权方式和推理强度。因此同一个底层模型可以分别拥有 Codex CLI 和 Claude Code 两份配置，这不是重复数据。
 

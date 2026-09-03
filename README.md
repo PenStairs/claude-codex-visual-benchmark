@@ -15,17 +15,67 @@
 
 Give two coding agents the same real prompt. Let each build in an isolated workspace. Verify both results, record them at matched settings, and export one side-by-side video you can judge with your own eyes.
 
-[简体中文](README.zh-CN.md) · [Quick start](docs/quick-start.md) · [Model gallery](docs/model-gallery.md) · [Prompt gallery](docs/prompt-gallery.md) · [Add your model](docs/add-your-model.md)
+[**Explore prompts**](docs/prompt-gallery.md) · [**Browse models**](docs/model-gallery.md) · [**Run a comparison**](docs/quick-start.md) · [**Bring your model**](docs/add-your-model.md) · [简体中文](README.zh-CN.md)
 
 </div>
 
-## See the difference, not just a score
+## Visual prompts worth testing
+
+These source posts inspired four of the benchmark prompts. They are here as a small, curated showcase—not as benchmark results produced by this repository. Click any screenshot to open the original X post.
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://x.com/emollick/status/2064424775527624736"><img src="assets/readme/x-source-drowned-city.jpg" alt="X source screenshot for the infinite neo-gothic drowned city Twigl prompt by Ethan Mollick" width="100%" /></a><br />
+      <strong>Infinite Neo-Gothic Drowned City</strong> · Twigl · 2 rounds<br />
+      <sub>Source showcase by <a href="https://x.com/emollick">@emollick</a></sub><br />
+      <a href="docs/prompts/drowned-city-v1.md">Original prompt and provenance →</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://x.com/TimJayas/status/2087474534924550433"><img src="assets/readme/x-source-queen-annes-revenge.jpg" alt="X source screenshot for the Queen Anne's Revenge Three.js prompt by Tim Jayas" width="100%" /></a><br />
+      <strong>Queen Anne's Revenge</strong> · Three.js<br />
+      <sub>Source showcase by <a href="https://x.com/TimJayas">@TimJayas</a></sub><br />
+      <a href="docs/prompts/queen-annes-revenge-v1.md">Original prompt and provenance →</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://x.com/Bhavani_00007/status/2077798166729208223"><img src="assets/readme/x-source-military-armory.jpg" alt="X source screenshot for the military armory Three.js comparison by Bhavy" width="100%" /></a><br />
+      <strong>Realistic Military Armory</strong> · Three.js<br />
+      <sub>Source showcase by <a href="https://x.com/Bhavani_00007">@Bhavani_00007</a></sub><br />
+      <a href="docs/prompts/military-armory-v1.md">Original prompt and provenance →</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://x.com/karankendre/status/2025624483000963350"><img src="assets/readme/x-source-japanese-castle.jpg" alt="X source screenshot for the procedural Japanese castle Three.js prompt by Karan" width="100%" /></a><br />
+      <strong>Procedural Japanese Castle</strong> · Three.js<br />
+      <sub>Source showcase by <a href="https://x.com/karankendre">@karankendre</a></sub><br />
+      <a href="docs/prompts/japanese-castle-v1.md">Original prompt and provenance →</a>
+    </td>
+  </tr>
+</table>
+
+<sub>Screenshots captured from public X embeds on 2026-09-03. Media and posts remain the property of their respective creators. Inclusion documents prompt provenance; it does not imply ownership, endorsement, or independent reproduction of the showcased result.</sub>
+
+## A real benchmark result from this project
 
 Traditional leaderboards compress a model into one number. Visual coding tasks expose composition, interaction, motion, polish, and runtime quality directly. This project turns those differences into replayable evidence.
 
 <img src="assets/readme/sample-military-armory.png" alt="Real GPT-5.6 Sol and Claude Fable 5.1 Three.js military armory comparison frames" width="100%" />
 
 <p align="center"><sub>Real benchmark output: GPT-5.6 Sol (top) vs Claude Fable 5.1 (bottom), same Three.js prompt and matched capture policy. This is a result sample, not a claim that either model wins universally.</sub></p>
+
+## Explore the collection
+
+<img src="assets/readme/explore.svg" alt="Explore 18 Three.js prompts, 2 Twigl prompts, 11 model profiles, and custom model pairs" width="100%" />
+
+| Explore by | What is inside | Open |
+|---|---|---|
+| **Three.js worlds** | 18 prompts for games, architecture, vehicles, simulations, procedural worlds, and interaction | [Browse Three.js prompts](docs/prompt-gallery.md#threejs) |
+| **Twigl shaders** | 2 real-time GLSL prompts, including a two-round `Make it better` continuation | [Browse Twigl prompts](docs/prompt-gallery.md#twigl) |
+| **Model profiles** | 11 runnable profiles across Codex CLI and Claude Code | [Browse model profiles](docs/model-gallery.md) |
+| **Benchmark results** | Official and community publication tracks with different evidence requirements | [Open result gallery](docs/benchmark-gallery.md) |
+
+Every user defines their own comparison pair. Start with the built-in profiles or [bring any compatible model](docs/add-your-model.md); the gallery never assumes there is one mandatory Claude-versus-Codex matchup.
 
 ## What makes this benchmark different
 
@@ -98,7 +148,7 @@ npx skills add PenStairs/claude-codex-visual-benchmark --global --all --copy
 
 Or copy the repository into your agent's Skills directory. Then ask the agent to use `$visual-code-model-benchmark` and guide you through model, method, prompt, plan review, and confirmation.
 
-## Built for Claude, Codex, and your own models
+## Model profiles and runners
 
 The same underlying model can have multiple profiles because a profile describes the whole execution path—not only a model name.
 
