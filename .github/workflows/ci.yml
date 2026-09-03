@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: 20.19.0
           cache: npm
@@ -26,3 +26,5 @@ jobs:
       - run: npm run check:public
       - run: npm run check:docs
       - run: npm run check
+        env:
+          BENCHMARK_SELF_TEST_ALLOW_MISSING_RUNNER_CLI: "1"

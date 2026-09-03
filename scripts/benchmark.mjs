@@ -583,10 +583,14 @@ async function selfTestCommand(options) {
       missingOptional.push({ runner: runner.id, command: runner.commandName, error: error.message });
     }
   }
-  if (missingOptional.length === Object.keys(RUNNERS).length) {
+  const allowMissingRunnerCli = process.env.BENCHMARK_SELF_TEST_ALLOW_MISSING_RUNNER_CLI === '1';
+  if (missingOptional.length === Object.keys(RUNNERS).length && !allowMissingRunnerCli) {
     throw new BenchmarkError('No runner CLI is installed. Install Codex CLI and/or Claude Code.', { kind: 'infrastructure' });
   }
-  if (missingOptional.length) results.push({ runnerCommandsMissing: missingOptional });
+  if (missingOptional.length) results.push({
+    runnerCommandsMissing: missingOptional,
+    allowedBySelfTestEnvironment: allowMissingRunnerCli,
+  });
   emit({ ok: true, policyVersion: policy.schemaVersion, results }, options.json);
 }
 
