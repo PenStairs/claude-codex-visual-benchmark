@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "twigl",
+  "displayName": "Twigl Classic",
+  "template": "assets/templates/twigl-v1",
+  "promptRoot": "config/prompts/twigl",
+  "allowedModifiedFiles": ["shader.frag"],
+  "requiredModifiedFiles": ["shader.frag"],
+  "ignoredGeneratedPaths": [],
+  "twiglUrl": "https://twigl.app/#modeselect=0",
+  "recording": {
+    "interaction": "mouse-uniform"
+  }
+}

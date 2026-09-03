@@ -1,0 +1,13 @@
+{
+  "id": "threejs-example-v1",
+  "version": 1,
+  "status": "active",
+  "method": "threejs",
+  "title": "User-provided Three.js example",
+  "promptFile": "prompt.md",
+  "source": {
+    "platform": "user-provided",
+    "methodOrigin": "prompt-native",
+    "provenanceNote": "Example placeholder supplied by the repository; replace it with the real source boundary for your prompt."
+  }
+}

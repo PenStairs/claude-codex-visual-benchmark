@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-09-03",
+  "currency": "USD",
+  "unitTokens": 1000000,
+  "models": {
+    "gpt-5.6-sol": {
+      "displayName": "GPT-5.6 Sol",
+      "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+      "sourceLabel": "OpenAI API model pricing",
+      "reviewAfter": "2026-11-21T23:59:59Z",
+      "schedule": {
+        "type": "fixed",
+        "planId": "standard-promotional",
+        "rates": {
+          "input": 4,
+          "cachedInput": 0.4,
+          "cacheWriteInput": 5,
+          "output": 20
+        }
+      },
+      "notes": [
+        "Promotional pricing is officially stated to remain available at least through 2026-11-21.",
+        "The lowest-price policy uses standard processing rather than the higher Fast-mode price.",
+        "The lowest-price policy does not apply the higher >272K-input surcharge."
+      ]
+    },
+    "claude-fable-5-1": {
+      "displayName": "Claude Fable 5.1",
+      "sourceUrl": "https://platform.claude.com/docs/en/models/fable-5-1/overview",
+      "sourceLabel": "Claude Platform model pricing",
+      "schedule": {
+        "type": "fixed",
+        "planId": "standard",
+        "rates": {
+          "input": 10,
+          "cachedInput": 0.25,
+          "cacheWriteInput": 12.5,
+          "output": 50
+        }
+      },
+      "notes": [
+        "The lowest-price policy uses the lower 5-minute cache-write rate instead of the 1-hour rate.",
+        "A Claude Code runner estimate is retained as reference only and does not replace the benchmark's lower-price calculation."
+      ]
+    },
+    "claude-opus-5": {
+      "displayName": "Claude Opus 5",
+      "sourceUrl": "https://platform.claude.com/docs/en/models/overview",
+      "sourceLabel": "Claude Platform model pricing",
+      "schedule": {
+        "type": "fixed",
+        "planId": "standard",
+        "rates": {
+          "input": 5,
+          "cachedInput": 0.5,
+          "cacheWriteInput": 6.25,
+          "output": 25
+        }
+      },
+      "notes": [
+        "The lowest-price policy uses the lower 5-minute cache-write rate instead of the 1-hour rate.",
+        "A Claude Code runner estimate is retained as reference only and does not replace the benchmark's lower-price calculation."
+      ]
+    },
+    "deepseek-v4-flash": {
+      "displayName": "DeepSeek V4 Flash",
+      "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "sourceLabel": "DeepSeek API Models & Pricing",
+      "schedule": {
+        "type": "weekly-utc",
+        "selection": "lowest",
+        "peakPlanId": "peak",
+        "offPeakPlanId": "off-peak",
+        "peakWeekdays": [1, 2, 3, 4, 5],
+        "peakWindows": [
+          { "startMinute": 60, "endMinute": 240 },
+          { "startMinute": 360, "endMinute": 600 }
+        ],
+        "peakRates": {
+          "input": 0.44,
+          "cachedInput": 0.014,
+          "cacheWriteInput": 0.44,
+          "output": 1.32
+        },
+        "offPeakRates": {
+          "input": 0.22,
+          "cachedInput": 0.007,
+          "cacheWriteInput": 0.22,
+          "output": 0.66
+        }
+      },
+      "notes": [
+        "Peak hours are 01:00-04:00 and 06:00-10:00 UTC, Monday through Friday; all other times are off-peak.",
+        "The benchmark's lowest-price policy always uses the lower off-peak rate, regardless of execution time."
+      ]
+    },
+    "deepseek-v4-pro": {
+      "displayName": "DeepSeek V4 Pro",
+      "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "sourceLabel": "DeepSeek API Models & Pricing",
+      "schedule": {
+        "type": "weekly-utc",
+        "selection": "lowest",
+        "peakPlanId": "peak",
+        "offPeakPlanId": "off-peak",
+        "peakWeekdays": [1, 2, 3, 4, 5],
+        "peakWindows": [
+          { "startMinute": 60, "endMinute": 240 },
+          { "startMinute": 360, "endMinute": 600 }
+        ],
+        "peakRates": {
+          "input": 1.32,
+          "cachedInput": 0.044,
+          "cacheWriteInput": 1.32,
+          "output": 3.96
+        },
+        "offPeakRates": {
+          "input": 0.66,
+          "cachedInput": 0.022,
+          "cacheWriteInput": 0.66,
+          "output": 1.98
+        }
+      },
+      "notes": [
+        "Peak hours are 01:00-04:00 and 06:00-10:00 UTC, Monday through Friday; all other times are off-peak.",
+        "The benchmark's lowest-price policy always uses the lower off-peak rate, regardless of execution time."
+      ]
+    },
+    "glm-5.3": {
+      "displayName": "GLM-5.3",
+      "sourceUrl": "https://docs.z.ai/guides/overview/pricing",
+      "sourceLabel": "Z.AI API pricing",
+      "schedule": {
+        "type": "fixed",
+        "planId": "standard",
+        "rates": {
+          "input": 1.4,
+          "cachedInput": 0.26,
+          "cacheWriteInput": 1.4,
+          "output": 4.4
+        }
+      },
+      "notes": [
+        "This is the public Z.AI USD API-equivalent list price; a Coding Plan run is subscription-backed and is not actually settled per run in USD.",
+        "Cached input storage is listed as limited-time free; cache-write tokens use the regular input rate in this estimate."
+      ]
+    },
+    "glm-5.3-flash": {
+      "displayName": "GLM-5.3-Flash",
+      "sourceUrl": "https://docs.z.ai/guides/overview/pricing",
+      "sourceLabel": "Z.AI API pricing",
+      "reviewAfter": "2026-09-09T15:59:59Z",
+      "schedule": {
+        "type": "periods",
+        "selection": "lowest",
+        "periods": [
+          {
+            "planId": "launch-promotion",
+            "endsAtExclusive": "2026-09-09T16:00:00Z",
+            "rates": {
+              "input": 0.075,
+              "cachedInput": 0.015,
+              "cacheWriteInput": 0.075,
+              "output": 0.25
+            }
+          },
+          {
+            "planId": "standard",
+            "startsAt": "2026-09-09T16:00:00Z",
+            "rates": {
+              "input": 0.15,
+              "cachedInput": 0.03,
+              "cacheWriteInput": 0.15,
+              "output": 0.5
+            }
+          }
+        ]
+      },
+      "notes": [
+        "The lowest-price policy uses the 50% launch-promotion rate while this catalog remains valid; after 24:00 on 2026-09-09 UTC+8 the price must be refreshed before another estimate is emitted.",
+        "This is the public Z.AI USD API-equivalent list price; a Coding Plan run is subscription-backed and is not actually settled per run in USD.",
+        "Cached input storage is listed as limited-time free; cache-write tokens use the regular input rate in this estimate."
+      ]
+    }
+  }
+}

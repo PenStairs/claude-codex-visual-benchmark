@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "procedural-3d-world-v1",
+  "version": 2,
+  "method": "threejs",
+  "title": "Procedural Explorable 3D World",
+  "language": "en",
+  "promptFile": "prompt.md",
+  "source": {
+    "platform": "x",
+    "urls": [
+      "https://x.com/slash1sol/status/2084590501685043400"
+    ],
+    "methodOrigin": "prompt-native",
+    "engagementSnapshot": {
+      "capturedAt": "2026-09-03",
+      "likes": 95,
+      "scope": "source-post"
+    }
+  },
+  "requirements": {
+    "singleHtml": true,
+    "webgl2Required": true
+  },
+  "status": "active"
+}

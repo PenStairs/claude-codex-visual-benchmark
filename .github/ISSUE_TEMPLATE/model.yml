@@ -1,0 +1,36 @@
+name: Model profile request
+description: Propose a publicly documented model/runner integration.
+title: "[Model]: "
+labels: [model]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Provider and exact model ID
+    validations:
+      required: true
+  - type: dropdown
+    id: runner
+    attributes:
+      label: Runner
+      options: [Codex CLI, Claude Code, Both]
+    validations:
+      required: true
+  - type: input
+    id: docs
+    attributes:
+      label: Official integration documentation URL
+    validations:
+      required: true
+  - type: textarea
+    id: reasoning
+    attributes:
+      label: Verified reasoning controls
+      description: State what was actually probed; do not infer support from a marketing name.
+    validations:
+      required: true
+  - type: textarea
+    id: terms
+    attributes:
+      label: Authentication and terms boundary
+      description: API key, subscription plan, native login, and any client/use restrictions.

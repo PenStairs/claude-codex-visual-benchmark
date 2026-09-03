@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">Prompt provenance chain</title><desc id="desc">Original X post, exact prompt files, immutable plan hash, local run report, and final comparison video.</desc>
+  <rect width="1200" height="260" rx="28" fill="#07101f"/>
+  <g font-family="Segoe UI,Arial,sans-serif" text-anchor="middle">
+    <path d="M175 130H1025" stroke="#30415f" stroke-width="3" stroke-dasharray="7 9"/>
+    <g fill="#101d34" stroke-width="2">
+      <rect x="55" y="79" width="210" height="102" rx="18" stroke="#ffad45"/><rect x="285" y="79" width="210" height="102" rx="18" stroke="#d7e2ff"/><rect x="515" y="79" width="210" height="102" rx="18" stroke="#78d8ff"/><rect x="745" y="79" width="210" height="102" rx="18" stroke="#80e5c0"/><rect x="975" y="79" width="170" height="102" rx="18" stroke="#a782ff"/>
+    </g>
+    <g fill="#eff5ff" font-size="18" font-weight="700"><text x="160" y="120">SOURCE POST</text><text x="390" y="120">PROMPT FILES</text><text x="620" y="120">PLAN HASH</text><text x="850" y="120">RUN REPORT</text><text x="1060" y="120">VIDEO</text></g>
+    <g fill="#91a4c2" font-size="14"><text x="160" y="150">author · URL · snapshot</text><text x="390" y="150">rounds · exact bytes</text><text x="620" y="150">review before spend</text><text x="850" y="150">timing · tokens · status</text><text x="1060" y="150">visual proof</text></g>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "gpt-5.6-sol",
+  "displayName": "GPT-5.6 Sol",
+  "enabled": true,
+  "runner": "codex",
+  "model": "gpt-5.6-sol",
+  "provider": {
+    "id": "openai"
+  },
+  "authentication": {
+    "type": "codex-login"
+  },
+  "reasoning": {
+    "default": "high",
+    "allowed": ["low", "medium", "high", "xhigh", "ultra"]
+  },
+  "supportedMethods": ["threejs", "twigl"]
+}

@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": [
+    "config/models",
+    "config/prompts"
+  ],
+  "counts": {
+    "modelProfiles": 11,
+    "modelIdentities": 7,
+    "runners": 2,
+    "prompts": 20,
+    "threejsPrompts": 18,
+    "twiglPrompts": 2
+  },
+  "models": [
+    {
+      "id": "claude-fable-5-1",
+      "displayName": "Claude Fable 5.1",
+      "runner": "claude",
+      "provider": "anthropic",
+      "reasoning": "high",
+      "methods": [
+        "threejs",
+        "twigl"
+      ]
+    },
+    {
+      "id": "claude-opus-5",
+      "displayName": "Claude Opus 5",
+      "runner": "claude",
+      "provider": "anthropic",
+      "reasoning": "high",
+      "methods": [
+        "threejs",
+        "twigl"
+      ]
+    },
+    {
+      "id": "deepseek-v4-flash-claude",
+      "displayName": "DeepSeek V4 Flash (Claude Code)",
+      "runner": "claude",
+      "provider": "deepseek",
+      "reasoning": "max",
+      "methods": [
+        "threejs",
+        "twigl"
+      ]
+    },
+    {
+      "id": "deepseek-v4-flash",
+      "displayName": "DeepSeek V4 Flash",
+      "runner": "codex",
+      "provider": "deepseek",
+      "reasoning": "max",
+      "methods": [
+        "threejs",
+        "twigl"
+      ]
+    },
+    {
+      "id": "deepseek-v4-pro-claude",
+      "displayName": "DeepSeek V4 Pro (Claude Code)",
+      "runner": "claude",
+      "provider": "deepseek",
+      "reasoning": "high",
+      "methods": [
+        "threejs",
+        "twigl"
+      ]
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "displayName": "DeepSeek V4 Pro",
+      "runner": "codex",
+      "provider": "deepseek",
+      "reasoning": "high",
+      "methods": [
+        "threejs",
+        "twigl"
+      ]
+    },
+    {
+      "id": "glm-5.3-coding-plan-claude",
+      "displayName": "GLM-5.3 Coding Plan (Claude Code)",
+      "runner": "claude",
+      "provider": "skillflow_glm",
+      "reasoning": "high",
+      "methods": [
+        "threejs",
+        "twigl"
+      ]
+    },
+    {
+      "id": "glm-5.3-coding-plan",
+      "displayName": "GLM-5.3 Coding Plan",
+      "runner": "codex",
+      "provider": "skillflow_glm",
+      "reasoning": "high",
+      "methods": [
+        "threejs",
+        "twigl"
+      ]
+    },
+    {
+      "id": "glm-5.3-flash-claude",
+      "displayName": "GLM-5.3-Flash (Claude Code)",
+      "runner": "claude",
+      "provider": "skillflow_glm",
+      "reasoning": "max",
+      "methods": [
+        "threejs",
+        "twigl"
+      ]
+    },
+    {
+      "id": "glm-5.3-flash",
+      "displayName": "GLM-5.3-Flash",
+      "runner": "codex",
+      "provider": "skillflow_glm",
+      "reasoning": "max",
+      "methods": [
+        "threejs",
+        "twigl"
+      ]
+    },
+    {
+      "id": "gpt-5.6-sol",
+      "displayName": "GPT-5.6 Sol",
+      "runner": "codex",
+      "provider": "openai",
+      "reasoning": "high",
+      "methods": [
+        "threejs",
+        "twigl"
+      ]
+    }
+  ],
+  "prompts": [
+    {
+      "id": "anime-japanese-suburban-street-v1",
+      "title": "Anime-Style Japanese Suburban Street",
+      "method": "threejs",
+      "rounds": 1,
+      "sourceUrls": [
+        "https://x.com/gmi_cloud/status/2080834581247435102"
+      ],
+      "evidence": "Source linked; prompt evidence not independently re-verified"
+    },
+    {
+      "id": "city-eating-hole-game-v1",
+      "title": "City-Eating Hole Game",
+      "method": "threejs",
+      "rounds": 1,
+      "sourceUrls": [
+        "https://x.com/givros/status/2078391824343880158"
+      ],
+      "evidence": "Source linked; prompt evidence not independently re-verified"
+    },
+    {
+      "id": "cod-zombies-clone-v1",
+      "title": "COD Zombies Clone",
+      "method": "threejs",
+      "rounds": 1,
+      "sourceUrls": [
+        "https://x.com/om_patel5/status/2064549188671508690"
+      ],
+      "evidence": "Source linked; prompt evidence not independently re-verified"
+    },
+    {
+      "id": "crime-investigation-board-v1",
+      "title": "3D Crime Investigation Board",
+      "method": "threejs",
+      "rounds": 1,
+      "sourceUrls": [
+        "https://x.com/0x0SojalSec/status/2085440893994365214"
+      ],
+      "evidence": "Source linked; prompt evidence not independently re-verified"
+    },
+    {
+      "id": "crossy-road-game-v1",
+      "title": "High-Quality Crossy Road Game",
+      "method": "threejs",
+      "rounds": 1,
+      "sourceUrls": [
+        "https://x.com/markksantos/status/2068962823007285628"
+      ],
+      "evidence": "Source linked; prompt evidence not independently re-verified"
+    },
+    {
+      "id": "cyberpunk-hovercar-racing-v1",
+      "title": "Cyberpunk Hovercar Racing",
+      "method": "threejs",
+      "rounds": 1,
+      "sourceUrls": [
+        "https://x.com/eyishazyer/status/2072677773655838950"
+      ],
+      "evidence": "Source linked; prompt evidence not independently re-verified"
+    },
+    {
+      "id": "eiffel-tower-paris-v1",
+      "title": "Eiffel Tower in Paris",
+      "method": "threejs",
+      "rounds": 1,
+      "sourceUrls": [
+        "https://x.com/Bhavani_00007/status/2079944268744155325"
+      ],
+      "evidence": "Source linked; prompt evidence not independently re-verified"
+    },
+    {
+      "id": "european-roulette-wheel-v1",
+      "title": "Photorealistic European Roulette Wheel",
+      "method": "threejs",
+      "rounds": 1,
+      "sourceUrls": [
+        "https://x.com/thehypedotnews/status/2077924746415518033"
+      ],
+      "evidence": "Source linked; prompt evidence not independently re-verified"
+    },
+    {
+      "id": "japanese-castle-v1",
+      "title": "Procedural Japanese Castle",
+      "method": "threejs",
+      "rounds": 1,
+      "sourceUrls": [
+        "https://x.com/karankendre/status/2025624483000963350"
+      ],
+      "evidence": "Source linked; prompt evidence not independently re-verified"
+    },
+    {
+      "id": "las-vegas-slot-machine-v1",
+      "title": "Las Vegas Slot Machine",
+      "method": "threejs",
+      "rounds": 1,
+      "sourceUrls": [
+        "https://x.com/thehypedotnews/status/2077924746415518033"
+      ],
+      "evidence": "Source linked; prompt evidence not independently re-verified"
+    },
+    {
+      "id": "military-armory-v1",
+      "title": "Realistic Military Armory",
+      "method": "threejs",
+      "rounds": 1,
+      "sourceUrls": [
+        "https://x.com/Bhavani_00007/status/2077895351600918899",
+        "https://x.com/Bhavani_00007/status/2077798166729208223"
+      ],
+      "evidence": "Manifest marks prompt as verbatim"
+    },
+    {
+      "id": "offshore-rocket-landing-v1",
+      "title": "Offshore Rocket Landing Simulation",
+      "method": "threejs",
+      "rounds": 1,
+      "sourceUrls": [
+        "https://x.com/Cryptor_dot/status/2076083000777883785"
+      ],
+      "evidence": "Source linked; prompt evidence not independently re-verified"
+    },
+    {
+      "id": "open-world-bazooka-rpg-v1",
+      "title": "Open-World Bazooka RPG",
+      "method": "threejs",
+      "rounds": 1,
+      "sourceUrls": [
+        "https://x.com/dangreenheck/status/2064736699469459753"
+      ],
+      "evidence": "Fairness-adapted; original preserved"
+    },
+    {
+      "id": "procedural-3d-world-v1",
+      "title": "Procedural Explorable 3D World",
+      "method": "threejs",
+      "rounds": 1,
+      "sourceUrls": [
+        "https://x.com/slash1sol/status/2084590501685043400"
+      ],
+      "evidence": "Source linked; prompt evidence not independently re-verified"
+    },
+    {
+      "id": "procedural-character-generator-v1",
+      "title": "Procedural Character Generator",
+      "method": "threejs",
+      "rounds": 1,
+      "sourceUrls": [
+        "https://x.com/TimJayas/status/2073250825858892241"
+      ],
+      "evidence": "Source linked; prompt evidence not independently re-verified"
+    },
+    {
+      "id": "queen-annes-revenge-v1",
+      "title": "Queen Anne's Revenge",
+      "method": "threejs",
+      "rounds": 1,
+      "sourceUrls": [
+        "https://x.com/TimJayas/status/2087474534924550433"
+      ],
+      "evidence": "Source linked; prompt evidence not independently re-verified"
+    },
+    {
+      "id": "steam-engine-prototype-v1",
+      "title": "Working Steam Engine Prototype",
+      "method": "threejs",
+      "rounds": 1,
+      "sourceUrls": [
+        "https://x.com/vikktorrrre/status/2090369860672856279"
+      ],
+      "evidence": "Source linked; prompt evidence not independently re-verified"
+    },
+    {
+      "id": "wright-flyer-v1",
+      "title": "Wright Flyer",
+      "method": "threejs",
+      "rounds": 1,
+      "sourceUrls": [
+        "https://x.com/TimJayas/status/2087277264744718510"
+      ],
+      "evidence": "Source linked; prompt evidence not independently re-verified"
+    },
+    {
+      "id": "drowned-city-v1",
+      "title": "Infinite Neo-Gothic Drowned City",
+      "method": "twigl",
+      "rounds": 2,
+      "sourceUrls": [
+        "https://x.com/emollick/status/2064424775527624736",
+        "https://x.com/emollick/status/2077783731691995348"
+      ],
+      "evidence": "Source linked; prompt evidence not independently re-verified"
+    },
+    {
+      "id": "lost-carcosa-v1",
+      "title": "Lost Carcosa",
+      "method": "twigl",
+      "rounds": 1,
+      "sourceUrls": [
+        "https://x.com/emollick/status/2091001394534707474"
+      ],
+      "evidence": "Source linked; prompt evidence not independently re-verified"
+    }
+  ]
+}

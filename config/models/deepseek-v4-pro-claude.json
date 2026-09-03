@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "deepseek-v4-pro-claude",
+  "displayName": "DeepSeek V4 Pro (Claude Code)",
+  "enabled": true,
+  "runner": "claude",
+  "model": "deepseek-v4-pro",
+  "provider": {
+    "id": "deepseek",
+    "name": "DeepSeek",
+    "baseUrl": "https://api.deepseek.com/anthropic",
+    "wireApi": "anthropic"
+  },
+  "authentication": {
+    "type": "environment",
+    "environmentVariable": "DEEPSEEK_API_KEY",
+    "header": "bearer"
+  },
+  "reasoning": {
+    "default": "high",
+    "allowed": ["low", "high", "max"],
+    "control": "effort-flag"
+  },
+  "supportedMethods": [
+    "threejs",
+    "twigl"
+  ]
+}

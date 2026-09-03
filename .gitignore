@@ -1,0 +1,15 @@
+node_modules/
+runs/
+*.log
+*.zip
+.env
+.env.*
+!.env.example
+_to_delete/
+backup-before-*/
+assets/audio/*.mp3
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+coverage/

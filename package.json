@@ -1,0 +1,28 @@
+{
+  "name": "claude-codex-visual-benchmark",
+  "version": "0.8.0",
+  "private": true,
+  "type": "module",
+  "description": "Open-source Claude, Codex and bring-your-own-model visual benchmark for Three.js and Twigl, with X-ready comparison video output.",
+  "scripts": {
+    "postinstall": "node scripts/patch-playwright-recorder.mjs",
+    "fetch:bgm": "node scripts/fetch-bgm.mjs",
+    "benchmark": "node scripts/patch-playwright-recorder.mjs && node scripts/benchmark.mjs",
+    "check": "node scripts/patch-playwright-recorder.mjs && node --check scripts/rerecord-run.mjs && node scripts/benchmark.mjs self-test && node scripts/tests/threejs-contract.mjs && node scripts/tests/process-timeouts.mjs && node scripts/tests/browser-motion.mjs && node scripts/tests/recording-retry.mjs && node scripts/tests/recording-pair-fallback.mjs && node scripts/tests/deterministic-capture.mjs",
+    "test:threejs-runtime": "node scripts/patch-playwright-recorder.mjs && node scripts/tests/threejs-runtime.mjs",
+    "smoke": "node scripts/patch-playwright-recorder.mjs && node scripts/smoke-test.mjs",
+    "rerecord": "node scripts/patch-playwright-recorder.mjs && node scripts/rerecord-run.mjs",
+    "smoke:publish": "node scripts/tests/publish-smoke.mjs",
+    "generate:docs": "node scripts/generate-open-source-docs.mjs",
+    "generate:brand": "node scripts/generate-brand-assets.mjs",
+    "check:public": "node scripts/validate-publication.mjs",
+    "check:docs": "node scripts/generate-open-source-docs.mjs --check"
+  },
+  "dependencies": {
+    "playwright": "1.62.1",
+    "pngjs": "7.0.0"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}

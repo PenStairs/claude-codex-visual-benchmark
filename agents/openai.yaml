@@ -1,0 +1,7 @@
+interface:
+  display_name: "视觉模型对比评测"
+  short_description: "用相同提示词生成、验证并录制双模型 X 专版视觉对比"
+  default_prompt: "使用 $visual-code-model-benchmark 选择两个模型和一个 Three.js 或 Twigl 视觉提示词，按配置的全部轮次运行并生成上下排列的 X 专版对比视频。"
+
+policy:
+  allow_implicit_invocation: true

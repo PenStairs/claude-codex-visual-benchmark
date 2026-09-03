@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "cod-zombies-clone-v1",
+  "version": 1,
+  "method": "threejs",
+  "title": "COD Zombies Clone",
+  "language": "en",
+  "promptFile": "prompt.md",
+  "source": {
+    "platform": "x",
+    "urls": [
+      "https://x.com/om_patel5/status/2064549188671508690"
+    ],
+    "methodOrigin": "source-environment"
+  },
+  "status": "active"
+}

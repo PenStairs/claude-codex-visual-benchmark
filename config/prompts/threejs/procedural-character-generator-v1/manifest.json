@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "procedural-character-generator-v1",
+  "version": 1,
+  "method": "threejs",
+  "title": "Procedural Character Generator",
+  "language": "en",
+  "promptFile": "prompt.md",
+  "source": {
+    "platform": "x",
+    "urls": [
+      "https://x.com/TimJayas/status/2073250825858892241"
+    ],
+    "methodOrigin": "prompt-native"
+  },
+  "status": "active"
+}

@@ -1,0 +1,1 @@
+Create a polished 3D browser game with Three.js where the player controls a moving hole that swallows houses and other city objects, grows as it consumes them, and earns points. Include smooth controls, collision detection, a follow camera, low-poly visuals, and a responsive interface. Organize the project into separate HTML, CSS, and JavaScript files.

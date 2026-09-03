@@ -1,0 +1,38 @@
+name: Bug report
+description: Report a reproducible runner, verification, recording, or documentation problem.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not include API keys, login tokens, private endpoints, or unreviewed raw logs.
+  - type: input
+    id: version
+    attributes:
+      label: Project version or commit
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: OS, Node.js, runner, and runner version
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Minimal reproduction
+      description: Include profile IDs, method, prompt ID, and sanitized commands.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized evidence
+      description: Paste only the smallest safe excerpt; attach a redacted report when useful.

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 2,
+  "id": "drowned-city-v1",
+  "version": 2,
+  "method": "twigl",
+  "title": "Infinite Neo-Gothic Drowned City",
+  "language": "en",
+  "rounds": [
+    {
+      "id": "initial",
+      "promptFile": "prompt.md"
+    },
+    {
+      "id": "improve",
+      "promptFile": "round-2.md"
+    }
+  ],
+  "source": {
+    "platform": "x",
+    "urls": [
+      "https://x.com/emollick/status/2064424775527624736",
+      "https://x.com/emollick/status/2077783731691995348"
+    ],
+    "methodOrigin": "prompt-native"
+  },
+  "status": "active"
+}

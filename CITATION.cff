@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: "Claude, Codex & Any Model — Visual Benchmark"
+message: "If this project helps your research or evaluation work, please cite the repository and the exact release used."
+type: software
+authors:
+  - name: PenStairs
+repository-code: "https://github.com/PenStairs/claude-codex-visual-benchmark"
+url: "https://github.com/PenStairs/claude-codex-visual-benchmark"
+license: MIT
+version: 0.8.0
+date-released: 2026-09-03

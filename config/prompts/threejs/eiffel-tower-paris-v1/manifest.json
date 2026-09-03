@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "eiffel-tower-paris-v1",
+  "version": 1,
+  "method": "threejs",
+  "title": "Eiffel Tower in Paris",
+  "language": "en",
+  "promptFile": "prompt.md",
+  "source": {
+    "platform": "x",
+    "urls": [
+      "https://x.com/Bhavani_00007/status/2079944268744155325"
+    ],
+    "methodOrigin": "prompt-native",
+    "engagementSnapshot": {
+      "capturedAt": "2026-09-03",
+      "likes": 204,
+      "scope": "source-post"
+    }
+  },
+  "status": "active"
+}

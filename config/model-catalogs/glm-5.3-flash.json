@@ -1,0 +1,48 @@
+{
+  "models": [
+    {
+      "additional_speed_tiers": [],
+      "availability_nux": null,
+      "base_instructions": "You are Codex, a coding agent. You and the user share the same workspace and collaborate to achieve the user's goals.",
+      "context_window": 1048576,
+      "default_reasoning_level": "max",
+      "default_reasoning_summary": "none",
+      "description": "GLM-5.3-Flash Coding Plan over the official Responses endpoint",
+      "display_name": "GLM-5.3-Flash",
+      "effective_context_window_percent": 95,
+      "experimental_supported_tools": [],
+      "input_modalities": ["text"],
+      "max_context_window": 1048576,
+      "priority": 999,
+      "service_tiers": [],
+      "shell_type": "shell_command",
+      "slug": "glm-5.3-flash",
+      "support_verbosity": false,
+      "supported_in_api": true,
+      "supported_reasoning_levels": [
+        {
+          "description": "Fast responses with lighter reasoning",
+          "effort": "low"
+        },
+        {
+          "description": "Deeper reasoning for complex coding tasks",
+          "effort": "high"
+        },
+        {
+          "description": "Maximum reasoning depth recommended for coding tasks",
+          "effort": "max"
+        }
+      ],
+      "supports_image_detail_original": false,
+      "supports_parallel_tool_calls": false,
+      "supports_reasoning_summaries": true,
+      "supports_search_tool": false,
+      "truncation_policy": {
+        "limit": 10000,
+        "mode": "bytes"
+      },
+      "upgrade": null,
+      "visibility": "list"
+    }
+  ]
+}

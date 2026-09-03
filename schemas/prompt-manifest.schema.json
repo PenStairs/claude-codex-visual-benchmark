@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/PenStairs/claude-codex-visual-benchmark/blob/main/schemas/prompt-manifest.schema.json",
+  "title": "Visual benchmark prompt manifest",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["id", "version", "method", "title", "source"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-v[0-9]+$" },
+    "version": { "type": "integer", "minimum": 1 },
+    "status": { "enum": ["active", "disabled"] },
+    "method": { "enum": ["threejs", "twigl"] },
+    "title": { "type": "string", "minLength": 1 },
+    "promptFile": { "type": "string", "minLength": 1 },
+    "rounds": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "promptFile"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "promptFile": { "type": "string", "minLength": 1 },
+          "sourceUrl": { "type": "string", "format": "uri" }
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": ["platform", "methodOrigin"],
+      "properties": {
+        "platform": { "enum": ["x", "user-provided"] },
+        "urls": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^https://x\\.com/" } },
+        "methodOrigin": { "enum": ["prompt-native", "source-environment"] },
+        "promptFidelity": { "enum": ["verbatim", "fairness-adapted"] },
+        "provenanceNote": { "type": "string" },
+        "originalPrompt": { "type": "string" },
+        "engagementSnapshot": {
+          "type": "object",
+          "required": ["capturedAt", "likes", "scope"],
+          "properties": {
+            "capturedAt": { "type": "string", "format": "date" },
+            "likes": { "type": "integer", "minimum": 0 },
+            "scope": { "type": "string" }
+          }
+        }
+      }
+    },
+    "requirements": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "singleHtml": { "type": "boolean" },
+        "webgl2Required": { "type": "boolean" },
+        "localThreeCdnMapping": { "type": "boolean" }
+      }
+    }
+  },
+  "oneOf": [
+    { "required": ["promptFile"], "not": { "required": ["rounds"] } },
+    { "required": ["rounds"], "not": { "required": ["promptFile"] } }
+  ]
+}

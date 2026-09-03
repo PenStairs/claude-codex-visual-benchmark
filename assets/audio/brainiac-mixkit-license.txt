@@ -1,0 +1,14 @@
+Track: Brainiac
+Artist: Alejandro Magaña (A. M.)
+Source page: https://mixkit.co/free-stock-music/electronic/
+Direct source: https://assets.mixkit.co/music/167/167.mp3
+License: Mixkit Stock Music Free License
+License page: https://mixkit.co/license/#musicFree
+Downloaded and checked: 2026-09-03
+SHA-256: 70c34019e4ecf4bf11dbf4dcc506bd79bfd723052e1b15fb03ff0b2c12f3873e
+
+The local MP3 is used only as part of rendered benchmark videos. Mixkit allows
+the music in social-media video projects, but its User Terms restrict making
+the original Item available to third parties. Do not include the raw MP3 in a
+redistributed Skill archive. Recipients should run `npm run fetch:bgm` to obtain
+their own local copy from Mixkit and accept the then-current license terms.

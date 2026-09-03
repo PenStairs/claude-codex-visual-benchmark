@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "cyberpunk-hovercar-racing-v1",
+  "version": 2,
+  "method": "threejs",
+  "title": "Cyberpunk Hovercar Racing",
+  "language": "en",
+  "promptFile": "prompt.md",
+  "source": {
+    "platform": "x",
+    "urls": [
+      "https://x.com/eyishazyer/status/2072677773655838950"
+    ],
+    "methodOrigin": "prompt-native"
+  },
+  "requirements": {
+    "singleHtml": true,
+    "localThreeCdnMapping": true
+  },
+  "status": "active"
+}

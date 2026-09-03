@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "city-eating-hole-game-v1",
+  "version": 1,
+  "method": "threejs",
+  "title": "City-Eating Hole Game",
+  "language": "en",
+  "promptFile": "prompt.md",
+  "source": {
+    "platform": "x",
+    "urls": [
+      "https://x.com/givros/status/2078391824343880158"
+    ],
+    "methodOrigin": "prompt-native",
+    "engagementSnapshot": {
+      "capturedAt": "2026-09-03",
+      "likes": 133,
+      "scope": "source-post"
+    }
+  },
+  "status": "active"
+}

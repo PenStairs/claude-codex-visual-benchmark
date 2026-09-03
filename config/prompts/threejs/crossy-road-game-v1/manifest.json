@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "crossy-road-game-v1",
+  "version": 2,
+  "method": "threejs",
+  "title": "High-Quality Crossy Road Game",
+  "language": "en",
+  "promptFile": "prompt.md",
+  "source": {
+    "platform": "x",
+    "urls": [
+      "https://x.com/markksantos/status/2068962823007285628"
+    ],
+    "methodOrigin": "prompt-native"
+  },
+  "requirements": {
+    "singleHtml": true
+  },
+  "status": "active"
+}

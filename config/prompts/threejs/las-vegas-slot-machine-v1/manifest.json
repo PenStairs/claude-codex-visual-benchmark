@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "las-vegas-slot-machine-v1",
+  "version": 1,
+  "method": "threejs",
+  "title": "Las Vegas Slot Machine",
+  "language": "en",
+  "promptFile": "prompt.md",
+  "source": {
+    "platform": "x",
+    "urls": [
+      "https://x.com/thehypedotnews/status/2077924746415518033"
+    ],
+    "methodOrigin": "source-environment",
+    "sourceMethod": "single-file HTML with Three.js, fully procedural, no assets",
+    "engagementSnapshot": {
+      "capturedAt": "2026-09-03",
+      "likes": 975,
+      "scope": "source-post"
+    }
+  },
+  "status": "active"
+}

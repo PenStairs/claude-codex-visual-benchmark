@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 8,
+  "reasoningPolicy": {
+    "defaultRequired": "high",
+    "requiredByProfile": {
+      "deepseek-v4-flash": "max",
+      "deepseek-v4-flash-claude": "max",
+      "glm-5.3-flash": "max",
+      "glm-5.3-flash-claude": "max"
+    },
+    "allowAutomaticFallback": false
+  },
+  "generation": {
+    "softTimeoutSeconds": 3600,
+    "hardTimeoutSeconds": 10800,
+    "idleTimeoutSeconds": 900,
+    "progressIntervalSeconds": 60
+  },
+  "repair": {
+    "timeoutSeconds": 3600,
+    "maximumRounds": 2,
+    "reasoning": "same-as-generation"
+  },
+  "preflight": {
+    "timeoutSeconds": 120,
+    "effort": "low"
+  },
+  "recovery": {
+    "allowSingleParticipantRetry": true,
+    "reuseSuccessfulParticipant": true,
+    "restartFailedParticipantFromCleanWorkspace": true,
+    "requireNewConfirmation": true,
+    "automaticPaidRetry": false
+  },
+  "threejsStartupTimeoutSeconds": 60,
+  "runRoot": "runs",
+  "parallelGeneration": true,
+  "abortPublishingOnInfrastructureFailure": true,
+  "uploadOnlyFinalMp4": true,
+  "video": {
+    "target": "x",
+    "layout": "vertical-stack",
+    "participantWidth": 1200,
+    "participantHeight": 676,
+    "outputWidth": 1200,
+    "outputHeight": 1352,
+    "framesPerSecond": 30,
+    "durationSeconds": 12,
+    "captureFramesPerSecond": 30,
+    "captureBitrateBitsPerSecond": 8000000,
+    "codec": "libx264",
+    "profile": "high",
+    "level": "4.1",
+    "pixelFormat": "yuv420p",
+    "preset": "slow",
+    "crf": 17,
+    "maximumBitrateBitsPerSecond": 25000000,
+    "maximumFileSizeBytes": 536870912,
+    "cadence": {
+      "pointerSamplesPerSecond": 30,
+      "captureTailMs": 800,
+      "maximumInteractionOverrunMs": 500,
+      "minimumAverageFps": 24,
+      "maximumP95FrameMs": 50,
+      "maximumFrameGapMs": 250,
+      "severeFrameRetry": {
+        "enabled": true,
+        "maximumRetries": 2,
+        "delayMs": 1000,
+        "maximumInteractionOverrunMs": 1500,
+        "minimumAverageFps": 18,
+        "maximumP95FrameMs": 100,
+        "maximumFrameGapMs": 500
+      }
+    },
+    "deterministicFallback": {
+      "enabled": true,
+      "applyToBothParticipants": true,
+      "warmupFrames": 30,
+      "frameTimeoutSeconds": 30,
+      "captureTimeoutSeconds": 1800,
+      "imageFormat": "png"
+    },
+    "audio": {
+      "enabled": true,
+      "asset": "assets/audio/brainiac-mixkit.mp3",
+      "title": "Brainiac",
+      "artist": "Alejandro Magaña (A. M.)",
+      "sourcePage": "https://mixkit.co/free-stock-music/electronic/",
+      "sourceUrl": "https://assets.mixkit.co/music/167/167.mp3",
+      "license": "Mixkit Stock Music Free License",
+      "licenseUrl": "https://mixkit.co/license/#musicFree",
+      "sha256": "70c34019e4ecf4bf11dbf4dcc506bd79bfd723052e1b15fb03ff0b2c12f3873e",
+      "startSeconds": 4,
+      "volume": 0.25,
+      "fadeInSeconds": 0.25,
+      "fadeOutSeconds": 0.75,
+      "codec": "aac",
+      "bitrateBitsPerSecond": 192000,
+      "sampleRate": 48000,
+      "channels": 2
+    }
+  }
+}

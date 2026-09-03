@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "crime-investigation-board-v1",
+  "version": 1,
+  "method": "threejs",
+  "title": "3D Crime Investigation Board",
+  "language": "en",
+  "promptFile": "prompt.md",
+  "source": {
+    "platform": "x",
+    "urls": [
+      "https://x.com/0x0SojalSec/status/2085440893994365214"
+    ],
+    "methodOrigin": "prompt-native",
+    "engagementSnapshot": {
+      "capturedAt": "2026-09-03",
+      "likes": 59,
+      "scope": "source-post"
+    }
+  },
+  "status": "active"
+}

@@ -1,0 +1,31 @@
+name: Prompt candidate
+description: Propose a source-grounded Three.js or Twigl benchmark prompt.
+title: "[Prompt]: "
+labels: [prompt]
+body:
+  - type: dropdown
+    id: method
+    attributes:
+      label: Method
+      options: [Three.js, Twigl]
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Direct original X post URL
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Complete prompt, copied exactly
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: What the source proves
+      description: Prompt location, method evidence, author, likes and capture date, dependencies, and round order.
+    validations:
+      required: true

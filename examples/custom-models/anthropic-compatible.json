@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "my-anthropic-model-claude",
+  "displayName": "My Anthropic-Compatible Model (Claude Code)",
+  "enabled": true,
+  "runner": "claude",
+  "model": "provider-model-id",
+  "provider": {
+    "id": "my_provider",
+    "name": "My Provider",
+    "baseUrl": "https://api.example.invalid/anthropic",
+    "wireApi": "anthropic"
+  },
+  "authentication": {
+    "type": "environment",
+    "environmentVariable": "MY_PROVIDER_API_KEY",
+    "header": "bearer"
+  },
+  "reasoning": {
+    "default": "high",
+    "allowed": ["low", "high"],
+    "control": "effort-flag"
+  },
+  "supportedMethods": ["threejs", "twigl"]
+}

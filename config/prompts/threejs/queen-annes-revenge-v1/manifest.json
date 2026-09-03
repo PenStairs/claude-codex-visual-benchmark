@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "queen-annes-revenge-v1",
+  "version": 1,
+  "method": "threejs",
+  "title": "Queen Anne's Revenge",
+  "language": "en",
+  "promptFile": "prompt.md",
+  "source": {
+    "platform": "x",
+    "urls": [
+      "https://x.com/TimJayas/status/2087474534924550433"
+    ],
+    "methodOrigin": "prompt-native"
+  },
+  "status": "active"
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "japanese-castle-v1",
+  "version": 2,
+  "method": "threejs",
+  "title": "Procedural Japanese Castle",
+  "language": "en",
+  "promptFile": "prompt.md",
+  "source": {
+    "platform": "x",
+    "urls": [
+      "https://x.com/karankendre/status/2025624483000963350"
+    ],
+    "methodOrigin": "prompt-native",
+    "sourceIssues": [
+      {
+        "type": "suspected-typo",
+        "verbatim": "usefferGeometryUtils.mergeGeometries",
+        "likelyIntended": "use BufferGeometryUtils.mergeGeometries",
+        "handling": "preserve-source-text"
+      }
+    ]
+  },
+  "requirements": {
+    "singleHtml": true
+  },
+  "status": "active"
+}

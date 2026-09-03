@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "deepseek-v4-pro",
+  "displayName": "DeepSeek V4 Pro",
+  "enabled": true,
+  "runner": "codex",
+  "model": "deepseek-v4-pro",
+  "provider": {
+    "id": "deepseek",
+    "name": "DeepSeek",
+    "baseUrl": "https://api.deepseek.com/",
+    "wireApi": "responses",
+    "requiresOpenAIAuth": false
+  },
+  "authentication": {
+    "type": "environment",
+    "environmentVariable": "DEEPSEEK_API_KEY"
+  },
+  "modelCatalog": "config/model-catalogs/deepseek-v4-pro.json",
+  "reasoning": {
+    "default": "high",
+    "allowed": ["low", "high", "max"]
+  },
+  "supportedMethods": ["threejs", "twigl"]
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "anime-japanese-suburban-street-v1",
+  "version": 1,
+  "method": "threejs",
+  "title": "Anime-Style Japanese Suburban Street",
+  "language": "en",
+  "promptFile": "prompt.md",
+  "source": {
+    "platform": "x",
+    "urls": [
+      "https://x.com/gmi_cloud/status/2080834581247435102"
+    ],
+    "methodOrigin": "prompt-native",
+    "engagementSnapshot": {
+      "capturedAt": "2026-09-03",
+      "likes": 737,
+      "scope": "source-post"
+    }
+  },
+  "status": "active"
+}

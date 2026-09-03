@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "glm-5.3-flash-claude",
+  "displayName": "GLM-5.3-Flash (Claude Code)",
+  "enabled": true,
+  "runner": "claude",
+  "model": "glm-5.3-flash",
+  "provider": {
+    "id": "skillflow_glm",
+    "name": "Z.AI Coding Plan",
+    "baseUrl": "https://open.bigmodel.cn/api/anthropic",
+    "wireApi": "anthropic"
+  },
+  "authentication": {
+    "type": "environment",
+    "environmentVariable": "GLM_CODING_PLAN_KEY",
+    "header": "bearer"
+  },
+  "reasoning": {
+    "default": "max",
+    "allowed": ["low", "high", "max"],
+    "control": "effort-flag"
+  },
+  "supportedMethods": [
+    "threejs",
+    "twigl"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "wright-flyer-v1",
+  "version": 1,
+  "method": "threejs",
+  "title": "Wright Flyer",
+  "language": "en",
+  "promptFile": "prompt.md",
+  "source": {
+    "platform": "x",
+    "urls": [
+      "https://x.com/TimJayas/status/2087277264744718510"
+    ],
+    "methodOrigin": "prompt-native",
+    "engagementSnapshot": {
+      "capturedAt": "2026-09-03",
+      "likes": 497,
+      "scope": "source-post"
+    }
+  },
+  "status": "active"
+}

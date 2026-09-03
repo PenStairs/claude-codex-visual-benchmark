@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "steam-engine-prototype-v1",
+  "version": 1,
+  "method": "threejs",
+  "title": "Working Steam Engine Prototype",
+  "language": "en",
+  "promptFile": "prompt.md",
+  "source": {
+    "platform": "x",
+    "urls": [
+      "https://x.com/vikktorrrre/status/2090369860672856279"
+    ],
+    "methodOrigin": "prompt-native"
+  },
+  "status": "active"
+}

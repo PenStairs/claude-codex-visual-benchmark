@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "threejs",
+  "displayName": "Three.js",
+  "template": "assets/templates/threejs-v1",
+  "promptRoot": "config/prompts/threejs",
+  "allowedModifiedFiles": ["index.html", "src/main.js", "src/style.css"],
+  "requiredModifiedFiles": [],
+  "requiredAnyModifiedFiles": ["index.html", "src/main.js"],
+  "ignoredGeneratedPaths": ["node_modules", "dist"],
+  "recording": {
+    "interaction": "orbit"
+  }
+}

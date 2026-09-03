@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "open-world-bazooka-rpg-v1",
+  "version": 2,
+  "method": "threejs",
+  "title": "Open-World Bazooka RPG",
+  "language": "en",
+  "promptFile": "prompt.md",
+  "source": {
+    "platform": "x",
+    "urls": [
+      "https://x.com/dangreenheck/status/2064736699469459753"
+    ],
+    "methodOrigin": "prompt-native",
+    "promptFidelity": "fairness-adapted",
+    "originalPrompt": "Fable, build me an open-world RPG in Three.js where I get to run around and blow stuff up with a bazooka",
+    "adaptation": {
+      "type": "remove-model-address",
+      "removedText": "Fable, ",
+      "reason": "Avoid favoring or addressing one named model in a cross-model benchmark."
+    },
+    "engagementSnapshot": {
+      "capturedAt": "2026-09-03",
+      "likes": 1736,
+      "scope": "source-post"
+    }
+  },
+  "status": "active"
+}

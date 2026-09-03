@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "military-armory-v1",
+  "version": 2,
+  "method": "threejs",
+  "title": "Realistic Military Armory",
+  "language": "en",
+  "promptFile": "prompt.md",
+  "source": {
+    "platform": "x",
+    "urls": [
+      "https://x.com/Bhavani_00007/status/2077895351600918899",
+      "https://x.com/Bhavani_00007/status/2077798166729208223"
+    ],
+    "methodOrigin": "prompt-native",
+    "promptFidelity": "verbatim",
+    "provenanceNote": "The first URL is the author's reply disclosing the exact prompt; the second URL is the associated Kimi K3 versus Claude Opus 4.8 result post.",
+    "engagementSnapshot": {
+      "capturedAt": "2026-09-03",
+      "likes": 146,
+      "scope": "prompt-post"
+    }
+  },
+  "status": "active"
+}

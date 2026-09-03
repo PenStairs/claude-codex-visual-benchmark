@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "glm-5.3-coding-plan-claude",
+  "displayName": "GLM-5.3 Coding Plan (Claude Code)",
+  "enabled": true,
+  "runner": "claude",
+  "model": "glm-5.3",
+  "provider": {
+    "id": "skillflow_glm",
+    "name": "Z.AI Coding Plan",
+    "baseUrl": "https://open.bigmodel.cn/api/anthropic",
+    "wireApi": "anthropic"
+  },
+  "authentication": {
+    "type": "environment",
+    "environmentVariable": "GLM_CODING_PLAN_KEY",
+    "header": "bearer"
+  },
+  "reasoning": {
+    "default": "high",
+    "allowed": ["low", "high", "max"],
+    "control": "effort-flag"
+  },
+  "supportedMethods": [
+    "threejs",
+    "twigl"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "skillflow-threejs-benchmark-entry",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "three": "0.185.1"
+  },
+  "devDependencies": {
+    "vite": "8.2.2"
+  }
+}

@@ -1,0 +1,1 @@
+photorealistic european roulette wheel – 37 pockets in the real sequence, mahogany clearcoat bowl, chrome turret, diamond deflectors, flick-to-spin, ball that spirals inward and settles on a mathematically real number

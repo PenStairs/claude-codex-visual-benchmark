@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "offshore-rocket-landing-v1",
+  "version": 1,
+  "method": "threejs",
+  "title": "Offshore Rocket Landing Simulation",
+  "language": "en",
+  "promptFile": "prompt.md",
+  "source": {
+    "platform": "x",
+    "urls": [
+      "https://x.com/Cryptor_dot/status/2076083000777883785"
+    ],
+    "methodOrigin": "prompt-native",
+    "engagementSnapshot": {
+      "capturedAt": "2026-09-03",
+      "likes": 76,
+      "scope": "source-post"
+    }
+  },
+  "status": "active"
+}

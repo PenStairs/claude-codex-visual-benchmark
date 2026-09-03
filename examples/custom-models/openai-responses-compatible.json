@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "my-responses-model",
+  "displayName": "My Responses Model",
+  "enabled": true,
+  "runner": "codex",
+  "model": "provider-model-id",
+  "provider": {
+    "id": "my_provider",
+    "name": "My Provider",
+    "baseUrl": "https://api.example.invalid/v1",
+    "wireApi": "responses",
+    "requiresOpenAIAuth": false
+  },
+  "authentication": {
+    "type": "environment",
+    "environmentVariable": "MY_PROVIDER_API_KEY"
+  },
+  "reasoning": {
+    "default": "high",
+    "allowed": ["low", "high"]
+  },
+  "supportedMethods": ["threejs", "twigl"]
+}

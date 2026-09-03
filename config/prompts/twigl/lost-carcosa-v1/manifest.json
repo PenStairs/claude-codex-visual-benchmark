@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "lost-carcosa-v1",
+  "version": 1,
+  "method": "twigl",
+  "title": "Lost Carcosa",
+  "language": "en",
+  "promptFile": "prompt.md",
+  "source": {
+    "platform": "x",
+    "urls": [
+      "https://x.com/emollick/status/2091001394534707474"
+    ],
+    "methodOrigin": "prompt-native"
+  },
+  "status": "active"
+}
