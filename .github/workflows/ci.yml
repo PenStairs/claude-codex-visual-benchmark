@@ -18,6 +18,8 @@ jobs:
         with:
           node-version: 20.19.0
           cache: npm
+      - name: Install FFmpeg
+        run: sudo apt-get update && sudo apt-get install --yes ffmpeg
       - run: npm ci
       - run: npx playwright install --with-deps chromium
       - run: npm run fetch:bgm
