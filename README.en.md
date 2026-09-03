@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[English](README.md) · [简体中文](README.zh-CN.md)
+[简体中文](README.md) · [English](README.en.md)
 
 **The most complete, beautiful, and reproducible visual comparison kit for Claude, Codex, and models you bring yourself.**
 

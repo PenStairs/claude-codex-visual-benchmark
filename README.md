@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[English](README.md) · [简体中文](README.zh-CN.md)
+[简体中文](README.md) · [English](README.en.md)
 
 **最全、最好看、还能复现的 Claude、Codex 与自定义模型视觉测评工具。**
 

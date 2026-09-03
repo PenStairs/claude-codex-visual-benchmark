@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const required = [
-  'README.md', 'README.zh-CN.md', 'LICENSE', 'CONTRIBUTING.md', 'SECURITY.md', 'CODE_OF_CONDUCT.md',
+  'README.md', 'README.en.md', 'LICENSE', 'CONTRIBUTING.md', 'SECURITY.md', 'CODE_OF_CONDUCT.md',
   '.github/workflows/ci.yml', 'docs/quick-start.md', 'docs/model-gallery.md', 'docs/prompt-gallery.md',
   'schemas/model-profile.schema.json', 'schemas/prompt-manifest.schema.json',
   'assets/readme/hero.jpg', 'assets/readme/social-preview.jpg', 'assets/readme/sample-military-armory.png',
