@@ -4,99 +4,126 @@
 
 <div align="center">
 
-[![Version](https://img.shields.io/badge/version-0.8.0-7c6cff?style=flat-square)](CHANGELOG.md)
-[![Model profiles](https://img.shields.io/badge/model_profiles-11-38bdf8?style=flat-square)](docs/model-gallery.md)
-[![Prompt library](https://img.shields.io/badge/source_linked_prompts-20-f59e0b?style=flat-square)](docs/prompt-gallery.md)
-[![Methods](https://img.shields.io/badge/methods-Three.js_%2B_Twigl-34d399?style=flat-square)](docs/benchmark-methods.md)
-[![CI](https://img.shields.io/github/actions/workflow/status/PenStairs/claude-codex-visual-benchmark/ci.yml?branch=main&style=flat-square&label=checks)](https://github.com/PenStairs/claude-codex-visual-benchmark/actions)
-[![License](https://img.shields.io/badge/license-MIT-e5e7eb?style=flat-square)](LICENSE)
+[English](README.md) · [简体中文](README.zh-CN.md)
 
 **The most complete, beautiful, and reproducible visual comparison kit for Claude, Codex, and models you bring yourself.**
 
-Give two coding agents the same real prompt. Let each build in an isolated workspace. Verify both results, record them at matched settings, and export one side-by-side video you can judge with your own eyes.
+One real prompt. Two isolated agents. Visual proof you can replay.
 
-[**Explore prompts**](docs/prompt-gallery.md) · [**Browse models**](docs/model-gallery.md) · [**Run a comparison**](docs/quick-start.md) · [**Bring your model**](docs/add-your-model.md) · [简体中文](README.zh-CN.md)
+<a href="docs/benchmark-gallery.md"><img src="https://img.shields.io/badge/BROWSE_BENCHMARKS-7c3aed?style=for-the-badge" alt="Browse benchmarks" /></a>
+<a href="docs/quick-start.md"><img src="https://img.shields.io/badge/RUN_YOUR_OWN_COMPARISON-0284c7?style=for-the-badge" alt="Run your own comparison" /></a>
 
 </div>
 
-## Visual prompts worth testing
+## Benchmark Highlights
 
-These source posts inspired four of the benchmark prompts. They are here as a small, curated showcase—not as benchmark results produced by this repository. Click any screenshot to open the original X post.
+<img src="assets/readme/benchmark-highlights.jpg" alt="Six selected frames from source videos: procedural 3D world, drowned city, anime street, cyberpunk racing, investigation board, and Queen Anne's Revenge" width="100%" />
+
+Six frames selected directly from the public source videos—not screenshots of the X interface. They represent [Procedural 3D World](https://x.com/slash1sol/status/2084590501685043400), [Drowned City](https://x.com/emollick/status/2064424775527624736), [Anime Suburban Street](https://x.com/gmi_cloud/status/2080834581247435102), [Cyberpunk Hovercar Racing](https://x.com/eyishazyer/status/2072677773655838950), [Crime Investigation Board](https://x.com/0x0SojalSec/status/2085440893994365214), and [Queen Anne's Revenge](https://x.com/TimJayas/status/2087474534924550433).
+
+<sub>Source-media frames captured on 2026-09-03 for prompt discovery and attribution. They are not benchmark results produced by this repository. Media rights remain with the respective creators; inclusion does not imply ownership, endorsement, or independent reproduction.</sub>
+
+### A real run from this project
+
+<img src="assets/readme/sample-military-armory.png" alt="Real GPT-5.6 Sol and Claude Fable 5.1 Three.js military armory comparison frames" width="100%" />
+
+<p align="center"><sub>GPT-5.6 Sol (top) vs Claude Fable 5.1 (bottom), same Three.js prompt and matched capture policy. This real run demonstrates the output format; it is not a universal model ranking.</sub></p>
+
+## Explore the Benchmark
+
+<img src="assets/readme/explore.svg" alt="Explore 18 Three.js prompts, 2 Twigl prompts, 11 model profiles, and custom model pairs" width="100%" />
 
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <a href="https://x.com/emollick/status/2064424775527624736"><img src="assets/readme/x-source-drowned-city.jpg" alt="X source screenshot for the infinite neo-gothic drowned city Twigl prompt by Ethan Mollick" width="100%" /></a><br />
-      <strong>Infinite Neo-Gothic Drowned City</strong> · Twigl · 2 rounds<br />
-      <sub>Source showcase by <a href="https://x.com/emollick">@emollick</a></sub><br />
-      <a href="docs/prompts/drowned-city-v1.md">Original prompt and provenance →</a>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://x.com/TimJayas/status/2087474534924550433"><img src="assets/readme/x-source-queen-annes-revenge.jpg" alt="X source screenshot for the Queen Anne's Revenge Three.js prompt by Tim Jayas" width="100%" /></a><br />
-      <strong>Queen Anne's Revenge</strong> · Three.js<br />
-      <sub>Source showcase by <a href="https://x.com/TimJayas">@TimJayas</a></sub><br />
-      <a href="docs/prompts/queen-annes-revenge-v1.md">Original prompt and provenance →</a>
-    </td>
+    <th width="33%">By method</th>
+    <th width="34%">By model family</th>
+    <th width="33%">By status</th>
   </tr>
   <tr>
-    <td width="50%" valign="top">
-      <a href="https://x.com/Bhavani_00007/status/2077798166729208223"><img src="assets/readme/x-source-military-armory.jpg" alt="X source screenshot for the military armory Three.js comparison by Bhavy" width="100%" /></a><br />
-      <strong>Realistic Military Armory</strong> · Three.js<br />
-      <sub>Source showcase by <a href="https://x.com/Bhavani_00007">@Bhavani_00007</a></sub><br />
-      <a href="docs/prompts/military-armory-v1.md">Original prompt and provenance →</a>
+    <td valign="top">
+      <a href="docs/prompt-gallery.md#threejs-18"><strong>Three.js</strong></a> · 18 worlds<br />
+      <a href="docs/prompt-gallery.md#twigl-2"><strong>Twigl</strong></a> · 2 shaders
     </td>
-    <td width="50%" valign="top">
-      <a href="https://x.com/karankendre/status/2025624483000963350"><img src="assets/readme/x-source-japanese-castle.jpg" alt="X source screenshot for the procedural Japanese castle Three.js prompt by Karan" width="100%" /></a><br />
-      <strong>Procedural Japanese Castle</strong> · Three.js<br />
-      <sub>Source showcase by <a href="https://x.com/karankendre">@karankendre</a></sub><br />
-      <a href="docs/prompts/japanese-castle-v1.md">Original prompt and provenance →</a>
+    <td valign="top">
+      <a href="docs/model-gallery.md"><strong>Claude</strong></a> · <a href="docs/model-gallery.md"><strong>Codex</strong></a> · <a href="docs/model-gallery.md"><strong>DeepSeek</strong></a> · <a href="docs/model-gallery.md"><strong>GLM</strong></a> · <a href="docs/add-your-model.md"><strong>Custom</strong></a>
+    </td>
+    <td valign="top">
+      <a href="benchmarks/official/README.md"><strong>Official</strong></a> · <a href="benchmarks/community/README.md"><strong>Community</strong></a> · <a href="https://github.com/PenStairs/claude-codex-visual-benchmark/releases/latest"><strong>Latest</strong></a>
     </td>
   </tr>
 </table>
 
-<sub>Screenshots captured from public X embeds on 2026-09-03. Media and posts remain the property of their respective creators. Inclusion documents prompt provenance; it does not imply ownership, endorsement, or independent reproduction of the showcased result.</sub>
+[Browse all prompts](docs/prompt-gallery.md) · [Browse all models](docs/model-gallery.md) · [Open the result gallery](docs/benchmark-gallery.md)
 
-## A real benchmark result from this project
+## Bring Any Two Models
 
-Traditional leaderboards compress a model into one number. Visual coding tasks expose composition, interaction, motion, polish, and runtime quality directly. This project turns those differences into replayable evidence.
+Every user defines the comparison pair. Use two built-in profiles, add two private profiles, or mix them. A profile declares the model, provider endpoint, authentication class, runner, and reasoning level—so the same underlying model may intentionally have more than one execution profile.
 
-<img src="assets/readme/sample-military-armory.png" alt="Real GPT-5.6 Sol and Claude Fable 5.1 Three.js military armory comparison frames" width="100%" />
+<img src="assets/readme/runner-routing.svg" alt="Model A and Model B select Codex CLI or Claude Code runners and write to isolated workspaces before video merging" width="100%" />
 
-<p align="center"><sub>Real benchmark output: GPT-5.6 Sol (top) vs Claude Fable 5.1 (bottom), same Three.js prompt and matched capture policy. This is a result sample, not a claim that either model wins universally.</sub></p>
+| Runner path | Built-in profiles | Compatible route |
+|---|---:|---|
+| **Codex CLI** | 6 | OpenAI login and Responses-compatible endpoints |
+| **Claude Code** | 5 | Anthropic login and Anthropic-compatible endpoints |
+| **Custom profile** | Unlimited | A tested configuration using either supported runner path |
 
-## Explore the collection
+[Add an OpenAI Responses-compatible model](examples/custom-models/openai-responses-compatible.json) · [Add an Anthropic-compatible model](examples/custom-models/anthropic-compatible.json) · [Read the custom-model guide](docs/add-your-model.md)
 
-<img src="assets/readme/explore.svg" alt="Explore 18 Three.js prompts, 2 Twigl prompts, 11 model profiles, and custom model pairs" width="100%" />
+## How It Works
 
-| Explore by | What is inside | Open |
-|---|---|---|
-| **Three.js worlds** | 18 prompts for games, architecture, vehicles, simulations, procedural worlds, and interaction | [Browse Three.js prompts](docs/prompt-gallery.md#threejs) |
-| **Twigl shaders** | 2 real-time GLSL prompts, including a two-round `Make it better` continuation | [Browse Twigl prompts](docs/prompt-gallery.md#twigl) |
-| **Model profiles** | 11 runnable profiles across Codex CLI and Claude Code | [Browse model profiles](docs/model-gallery.md) |
-| **Benchmark results** | Official and community publication tracks with different evidence requirements | [Open result gallery](docs/benchmark-gallery.md) |
+<img src="assets/readme/workflow.svg" alt="Same prompt, two agents, isolated workspaces, verification, recording, and one merged video" width="100%" />
 
-Every user defines their own comparison pair. Start with the built-in profiles or [bring any compatible model](docs/add-your-model.md); the gallery never assumes there is one mandatory Claude-versus-Codex matchup.
+**Same prompt → two agents → isolated workspaces → verify → record → merge.**
 
-## What makes this benchmark different
+Both agents receive the same normalized prompt bytes and equivalent clean scaffolds. The benchmark validates each result, captures matched browser motion, and exports one high-quality H.264 comparison video for X. Plan hash, timings, token usage, capture metadata, repairs, retries, and failures remain in the local run report.
 
-| | Capability | What you get |
-|---|---|---|
-| 🧩 | **Bring any two models** | Use the 11 built-in profiles or add your own Codex CLI / Claude Code compatible profile. |
-| 🎨 | **Visual-first evaluation** | Run rich Three.js worlds or compact Twigl shaders instead of judging code in a vacuum. |
-| 🔗 | **Source-linked prompts** | Every built-in prompt keeps its original X link, exact prompt files, method origin, and dated engagement snapshot when available. |
-| ⚖️ | **Controlled comparison** | Same prompt bytes, equivalent workspace rules, clean isolated scaffolds, explicit reasoning profiles, and matched recording settings. |
-| 🎬 | **X-ready proof** | Produces a high-quality H.264 vertical comparison video with both outputs stacked at native capture size. |
-| 🧾 | **Auditable runs** | The confirmed plan hash, timings, token usage, verification status, capture metadata, and failures remain in the local run report. |
+The workflow is local-first. Generated code and evidence stay under gitignored `runs/`; credentials stay in native CLI login stores or environment variables. Only a final video is uploaded when the user explicitly chooses to publish it.
 
-## One prompt. Two isolated agents. One visual proof.
+## Prompt Case Library
 
-<img src="assets/readme/workflow.svg" alt="Choose two models, one prompt, isolate, verify, and record" width="100%" />
+Every prompt has a visual frame from its source media, a direct X source, exact benchmark text, method classification, and a dedicated provenance page. Click a thumbnail for the full record.
 
-The benchmark is deliberately local-first. Models run through their configured agent runners on your machine; generated source code, logs, reports, and recordings stay under `runs/` unless you explicitly publish the final comparison video. Credentials stay in native CLI login stores or environment variables and are never written into a model profile.
+<table>
+  <tr>
+    <td width="33%" valign="top"><a href="docs/prompts/anime-japanese-suburban-street-v1.md"><img src="assets/readme/prompt-thumbnails/anime-japanese-suburban-street-v1.jpg" alt="Anime-style Japanese suburban street source video frame" width="100%" /></a><br /><strong>Anime Japanese Suburban Street</strong><br /><sub>Three.js · <a href="https://x.com/gmi_cloud/status/2080834581247435102">X source</a></sub></td>
+    <td width="34%" valign="top"><a href="docs/prompts/city-eating-hole-game-v1.md"><img src="assets/readme/prompt-thumbnails/city-eating-hole-game-v1.jpg" alt="City-eating hole game source video frame" width="100%" /></a><br /><strong>City-Eating Hole Game</strong><br /><sub>Three.js · <a href="https://x.com/givros/status/2078391824343880158">X source</a></sub></td>
+    <td width="33%" valign="top"><a href="docs/prompts/cod-zombies-clone-v1.md"><img src="assets/readme/prompt-thumbnails/cod-zombies-clone-v1.jpg" alt="COD Zombies clone source video frame" width="100%" /></a><br /><strong>COD Zombies Clone</strong><br /><sub>Three.js · <a href="https://x.com/om_patel5/status/2064549188671508690">X source</a></sub></td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="docs/prompts/crime-investigation-board-v1.md"><img src="assets/readme/prompt-thumbnails/crime-investigation-board-v1.jpg" alt="Crime investigation board source video frame" width="100%" /></a><br /><strong>3D Crime Investigation Board</strong><br /><sub>Three.js · <a href="https://x.com/0x0SojalSec/status/2085440893994365214">X source</a></sub></td>
+    <td valign="top"><a href="docs/prompts/crossy-road-game-v1.md"><img src="assets/readme/prompt-thumbnails/crossy-road-game-v1.jpg" alt="Crossy Road game source video frame" width="100%" /></a><br /><strong>High-Quality Crossy Road Game</strong><br /><sub>Three.js · <a href="https://x.com/markksantos/status/2068962823007285628">X source</a></sub></td>
+    <td valign="top"><a href="docs/prompts/cyberpunk-hovercar-racing-v1.md"><img src="assets/readme/prompt-thumbnails/cyberpunk-hovercar-racing-v1.jpg" alt="Cyberpunk hovercar racing source video frame" width="100%" /></a><br /><strong>Cyberpunk Hovercar Racing</strong><br /><sub>Three.js · <a href="https://x.com/eyishazyer/status/2072677773655838950">X source</a></sub></td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="docs/prompts/eiffel-tower-paris-v1.md"><img src="assets/readme/prompt-thumbnails/eiffel-tower-paris-v1.jpg" alt="Eiffel Tower in Paris source video frame" width="100%" /></a><br /><strong>Eiffel Tower in Paris</strong><br /><sub>Three.js · <a href="https://x.com/Bhavani_00007/status/2079944268744155325">X source</a></sub></td>
+    <td valign="top"><a href="docs/prompts/european-roulette-wheel-v1.md"><img src="assets/readme/prompt-thumbnails/european-roulette-wheel-v1.jpg" alt="European roulette wheel source video frame" width="100%" /></a><br /><strong>Photorealistic European Roulette</strong><br /><sub>Three.js · <a href="https://x.com/thehypedotnews/status/2077924746415518033">X source</a></sub></td>
+    <td valign="top"><a href="docs/prompts/japanese-castle-v1.md"><img src="assets/readme/prompt-thumbnails/japanese-castle-v1.jpg" alt="Procedural Japanese castle source video frame" width="100%" /></a><br /><strong>Procedural Japanese Castle</strong><br /><sub>Three.js · <a href="https://x.com/karankendre/status/2025624483000963350">X source</a></sub></td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="docs/prompts/las-vegas-slot-machine-v1.md"><img src="assets/readme/prompt-thumbnails/las-vegas-slot-machine-v1.jpg" alt="Las Vegas slot machine source video frame" width="100%" /></a><br /><strong>Las Vegas Slot Machine</strong><br /><sub>Three.js · <a href="https://x.com/thehypedotnews/status/2077924746415518033">X source</a></sub></td>
+    <td valign="top"><a href="docs/prompts/military-armory-v1.md"><img src="assets/readme/prompt-thumbnails/military-armory-v1.jpg" alt="Military armory comparison source video frame" width="100%" /></a><br /><strong>Realistic Military Armory</strong><br /><sub>Three.js · <a href="https://x.com/Bhavani_00007/status/2077798166729208223">X result</a> · <a href="https://x.com/Bhavani_00007/status/2077895351600918899">prompt</a></sub></td>
+    <td valign="top"><a href="docs/prompts/offshore-rocket-landing-v1.md"><img src="assets/readme/prompt-thumbnails/offshore-rocket-landing-v1.jpg" alt="Offshore rocket landing source video frame" width="100%" /></a><br /><strong>Offshore Rocket Landing</strong><br /><sub>Three.js · <a href="https://x.com/Cryptor_dot/status/2076083000777883785">X source</a></sub></td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="docs/prompts/open-world-bazooka-rpg-v1.md"><img src="assets/readme/prompt-thumbnails/open-world-bazooka-rpg-v1.jpg" alt="Open-world bazooka RPG source video frame" width="100%" /></a><br /><strong>Open-World Bazooka RPG</strong><br /><sub>Three.js · <a href="https://x.com/dangreenheck/status/2064736699469459753">X source</a></sub></td>
+    <td valign="top"><a href="docs/prompts/procedural-3d-world-v1.md"><img src="assets/readme/prompt-thumbnails/procedural-3d-world-v1.jpg" alt="Procedural explorable 3D world source video frame" width="100%" /></a><br /><strong>Procedural Explorable 3D World</strong><br /><sub>Three.js · <a href="https://x.com/slash1sol/status/2084590501685043400">X source</a></sub></td>
+    <td valign="top"><a href="docs/prompts/procedural-character-generator-v1.md"><img src="assets/readme/prompt-thumbnails/procedural-character-generator-v1.jpg" alt="Procedural character generator source video frame" width="100%" /></a><br /><strong>Procedural Character Generator</strong><br /><sub>Three.js · <a href="https://x.com/TimJayas/status/2073250825858892241">X source</a></sub></td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="docs/prompts/queen-annes-revenge-v1.md"><img src="assets/readme/prompt-thumbnails/queen-annes-revenge-v1.jpg" alt="Queen Anne's Revenge source video frame" width="100%" /></a><br /><strong>Queen Anne's Revenge</strong><br /><sub>Three.js · <a href="https://x.com/TimJayas/status/2087474534924550433">X source</a></sub></td>
+    <td valign="top"><a href="docs/prompts/steam-engine-prototype-v1.md"><img src="assets/readme/prompt-thumbnails/steam-engine-prototype-v1.jpg" alt="Working steam engine source video frame" width="100%" /></a><br /><strong>Working Steam Engine Prototype</strong><br /><sub>Three.js · <a href="https://x.com/vikktorrrre/status/2090369860672856279">X source</a></sub></td>
+    <td valign="top"><a href="docs/prompts/wright-flyer-v1.md"><img src="assets/readme/prompt-thumbnails/wright-flyer-v1.jpg" alt="Wright Flyer source video frame" width="100%" /></a><br /><strong>Wright Flyer</strong><br /><sub>Three.js · <a href="https://x.com/TimJayas/status/2087277264744718510">X source</a></sub></td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="docs/prompts/drowned-city-v1.md"><img src="assets/readme/prompt-thumbnails/drowned-city-v1.jpg" alt="Infinite neo-gothic drowned city source video frame" width="100%" /></a><br /><strong>Infinite Neo-Gothic Drowned City</strong><br /><sub>Twigl · 2 rounds · <a href="https://x.com/emollick/status/2064424775527624736">X source</a></sub></td>
+    <td valign="top"><a href="docs/prompts/lost-carcosa-v1.md"><img src="assets/readme/prompt-thumbnails/lost-carcosa-v1.jpg" alt="Lost Carcosa source video frame" width="100%" /></a><br /><strong>Lost Carcosa</strong><br /><sub>Twigl · <a href="https://x.com/emollick/status/2091001394534707474">X source</a></sub></td>
+    <td valign="top"><strong>Add the next case</strong><br /><br />A source-grounded Three.js or Twigl prompt can become the next benchmark case.<br /><br /><a href="CONTRIBUTING_PROMPTS.md">Contribute a prompt →</a></td>
+  </tr>
+</table>
 
-## Start in five minutes
+<sub>Frames were extracted from public source media on 2026-09-03. Source-linked does not mean independently re-verified; open each detail page for the exact evidence status, engagement snapshot, adaptation notes, and prompt bytes.</sub>
 
-Prerequisites: Node.js 20.19+, FFmpeg, Chromium for Playwright, and at least one authenticated runner (`codex` or `claude`).
+## Quick Start / Install Skill
 
 ```bash
 git clone https://github.com/PenStairs/claude-codex-visual-benchmark.git
@@ -107,118 +134,69 @@ npm run fetch:bgm
 npm run benchmark -- doctor
 ```
 
-Explore the current library:
-
-```bash
-npm run benchmark -- list-models
-npm run benchmark -- list-prompts --method threejs
-npm run benchmark -- list-prompts --method twigl
-```
-
-Build a reviewable plan before spending model quota:
-
-```bash
-npm run benchmark -- describe \
-  --model-a gpt-5.6-sol \
-  --model-b claude-fable-5-1 \
-  --method threejs \
-  --prompt military-armory-v1
-```
-
-After checking the exact prompt, profiles, reasoning levels, and estimated workflow, run again with the returned plan hash:
-
-```bash
-npm run benchmark -- run \
-  --model-a gpt-5.6-sol \
-  --model-b claude-fable-5-1 \
-  --method threejs \
-  --prompt military-armory-v1 \
-  --confirmed-plan <sha256>
-```
-
-Windows PowerShell uses the same commands; either put the command on one line or replace `\` with PowerShell's backtick. Read the full [Quick start](docs/quick-start.md) before your first paid run.
-
-### Install as a Codex Skill
-
-The repository root is a complete Skill. With the open-source Skills CLI:
+Install the repository as an Agent Skill:
 
 ```bash
 npx skills add PenStairs/claude-codex-visual-benchmark --global --all --copy
 ```
 
-Or copy the repository into your agent's Skills directory. Then ask the agent to use `$visual-code-model-benchmark` and guide you through model, method, prompt, plan review, and confirmation.
+Then ask the agent to use `$visual-code-model-benchmark`. It will guide you through two models, method, prompt, plan review, and explicit confirmation before quota is consumed. [Read the five-minute guide](docs/quick-start.md) or [inspect the exact CLI flow](USAGE.zh-CN.md).
 
-## Model profiles and runners
+## Fairness and Provenance
 
-The same underlying model can have multiple profiles because a profile describes the whole execution path—not only a model name.
+<img src="assets/readme/provenance.svg" alt="Original X source, exact prompt, immutable plan hash, run report, and final video" width="100%" />
 
-| Runner | Built-in profiles | Best fit |
-|---|---:|---|
-| Codex CLI | 6 | OpenAI login and Responses-compatible endpoints |
-| Claude Code | 5 | Anthropic login and Anthropic-compatible endpoints |
+| Controlled in an official run | Disclosed rather than hidden |
+|---|---|
+| Same normalized prompt bytes and round order | Codex CLI or Claude Code runner path |
+| Equivalent clean scaffolds and file rules | Provider endpoint and authentication class |
+| Explicit reasoning policy with no silent downgrade | Model-specific meaning of `high` or `max` |
+| Parallel generation and matched capture policy | Hardware, recording fallback, repairs, retries, and failures |
 
-Flash profiles default to their highest configured reasoning preset; all other profiles default to `high`. Automatic reasoning fallback is disabled so a quality run cannot silently downgrade itself.
+- **Reasoning:** Flash profiles use `max`; all other built-in profiles use `high`.
+- **Timeouts:** 60-minute soft warning, 180-minute hard limit, and 15-minute idle limit; Three.js startup allows 60 seconds.
+- **Hardware:** local CPU/GPU and recording fallback belong in the run disclosure, not in a hidden global ranking.
+- **Sources:** original URLs, prompt bytes, method origin, snapshots, and adaptations are recorded separately.
+- **Results:** [Official](benchmarks/official/README.md) and [Community](benchmarks/community/README.md) runs answer different questions and are never silently mixed.
 
-See the live, generated [Model gallery](docs/model-gallery.md), or start from these templates:
-
-- [OpenAI Responses-compatible custom model](examples/custom-models/openai-responses-compatible.json)
-- [Anthropic-compatible custom model](examples/custom-models/anthropic-compatible.json)
-
-## Prompt gallery with provenance
-
-The built-in library currently contains:
-
-- **18 Three.js prompts** covering games, simulations, architecture, vehicles, procedural worlds, and interaction.
-- **2 Twigl prompts** for compact real-time shader evaluation, including a genuine two-round `Make it better` continuation.
-- **20 source-linked prompts**, with direct X post URLs and dated engagement snapshots where the local manifest has captured them.
-
-[Browse every prompt →](docs/prompt-gallery.md)
-
-Each generated detail page shows the unmodified prompt text used by the runner, all source URLs, the linked account and post ID, the method origin, multi-round order, engagement capture date, and any adaptation or source issue disclosure.
-
-<img src="assets/readme/provenance.svg" alt="Prompt source to final video provenance chain" width="100%" />
-
-Important: **source-linked is not the same as independently re-verified**. The gallery labels this conservatively. Engagement counts are historical snapshots, not live popularity claims. See [Prompt provenance](docs/prompt-provenance.md).
-
-## Official vs community benchmarks
-
-To keep comparisons meaningful, this project does not mix every custom setup into one universal leaderboard.
-
-- **Official benchmark**: unchanged released profile and prompt versions, declared runner, required reasoning policy, clean workspace, and complete local evidence.
-- **Community benchmark**: custom model, endpoint, prompt, runner patch, policy, or hardware. Valuable and welcome, but reported with its own configuration.
-
-Both belong in the project; they answer different questions. Read [Official vs community](docs/official-vs-community.md) and [Fairness policy](docs/fairness.md).
-
-## Repository map
-
-```text
-config/models/          Runnable model profiles
-config/prompts/         Source-linked Three.js and Twigl prompts
-config/methods/         Benchmark scaffolds and file contracts
-assets/templates/       Isolated workspaces given to each model
-scripts/                Orchestration, verification, recording, and tests
-schemas/                Public JSON Schemas for extensions
-examples/               Copyable custom model and prompt examples
-docs/                   Guides and generated galleries
-benchmarks/             Publication contracts for official/community results
-runs/                   Local outputs — always gitignored
-```
+One run supports only this claim: under the declared prompt, profiles, runners, reasoning settings, policy, and hardware, these were the produced outputs. It does not prove that one model is universally better. Read the [fairness policy](docs/fairness.md) and [prompt provenance policy](docs/prompt-provenance.md).
 
 ## Contribute
 
-You can contribute a model profile, a source-grounded prompt, a runner improvement, a reproducible bug report, or a community result.
+- [Add a model profile](CONTRIBUTING_MODELS.md)
+- [Add a source-grounded prompt](CONTRIBUTING_PROMPTS.md)
+- [Submit a community benchmark](benchmarks/community/README.md)
+- [Improve a runner or recording path](CONTRIBUTING.md)
+- [Report a reproducible problem](https://github.com/PenStairs/claude-codex-visual-benchmark/issues)
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md), then use the focused guide for [models](CONTRIBUTING_MODELS.md) or [prompts](CONTRIBUTING_PROMPTS.md). Pull requests run configuration, contract, timeout, browser-motion, recording, generated-doc, and publication-safety checks.
+Every change is checked against configuration, prompt contracts, timeout behavior, browser motion, recording quality, generated docs, and publication safety.
 
-## Security, privacy, and affiliation
+## Community and Project Status
 
-- Keep API keys in environment variables; never commit them.
-- Generated workspaces and evidence remain local under `runs/`.
-- Model outputs are untrusted code and are run inside the benchmark's constrained local scaffold—not a security sandbox for hostile code.
-- Review provider terms before using subscription-backed plans or third-party gateways.
+[![Version](https://img.shields.io/badge/version-0.8.0-7c6cff?style=flat-square)](https://github.com/PenStairs/claude-codex-visual-benchmark/releases/tag/v0.8.0)
+[![Model profiles](https://img.shields.io/badge/model_profiles-11-38bdf8?style=flat-square)](docs/model-gallery.md)
+[![Prompts](https://img.shields.io/badge/source_linked_prompts-20-f59e0b?style=flat-square)](docs/prompt-gallery.md)
+[![CI](https://img.shields.io/github/actions/workflow/status/PenStairs/claude-codex-visual-benchmark/ci.yml?branch=main&style=flat-square&label=checks)](https://github.com/PenStairs/claude-codex-visual-benchmark/actions)
+[![License](https://img.shields.io/badge/license-MIT-e5e7eb?style=flat-square)](LICENSE)
 
-See [SECURITY.md](SECURITY.md). This is an independent community project by [PenStairs](https://github.com/PenStairs). It is not affiliated with, sponsored by, or endorsed by Anthropic, OpenAI, DeepSeek, Zhipu AI, Three.js, Twigl, or X.
+[Discussions](https://github.com/PenStairs/claude-codex-visual-benchmark/discussions) · [Roadmap](ROADMAP.md) · [Latest release](https://github.com/PenStairs/claude-codex-visual-benchmark/releases/latest) · [Changelog](CHANGELOG.md) · [Documentation](docs/README.md)
 
-## License
+### Star History
 
-Code and original project documentation are released under the [MIT License](LICENSE). Prompt text and linked posts may retain rights held by their original authors; source attribution does not relicense third-party content. The optional soundtrack is downloaded separately under its own [license notice](assets/audio/brainiac-mixkit-license.txt).
+[![Star History Chart](https://api.star-history.com/svg?repos=PenStairs/claude-codex-visual-benchmark&type=Date)](https://www.star-history.com/#PenStairs/claude-codex-visual-benchmark&Date)
+
+## Security / Disclaimer / License
+
+Keep API keys in environment variables and treat model-generated code as untrusted. The constrained local scaffold is not a security sandbox for hostile code. Review provider terms before using subscription plans or third-party gateways. See [SECURITY.md](SECURITY.md).
+
+This is an independent community project by [PenStairs](https://github.com/PenStairs), with no affiliation or endorsement from Anthropic, OpenAI, DeepSeek, Zhipu AI, Three.js, Twigl, or X. Product names are descriptive compatibility labels.
+
+Code and original project documentation use the [MIT License](LICENSE). Prompt text, linked posts, and source-media frames may retain rights held by their original creators; attribution does not relicense third-party content. The optional soundtrack follows its own [license notice](assets/audio/brainiac-mixkit-license.txt).
+
+<div align="center">
+
+**Choose two models. Keep the prompt fixed. Let the work speak.**
+
+[Browse benchmarks](docs/benchmark-gallery.md) · [Run your own comparison](docs/quick-start.md)
+
+</div>

@@ -4,98 +4,126 @@
 
 <div align="center">
 
-[![版本](https://img.shields.io/badge/version-0.8.0-7c6cff?style=flat-square)](CHANGELOG.md)
-[![模型配置](https://img.shields.io/badge/model_profiles-11-38bdf8?style=flat-square)](docs/model-gallery.md)
-[![提示词库](https://img.shields.io/badge/source_linked_prompts-20-f59e0b?style=flat-square)](docs/prompt-gallery.md)
-[![测评方式](https://img.shields.io/badge/methods-Three.js_%2B_Twigl-34d399?style=flat-square)](docs/benchmark-methods.md)
-[![开源协议](https://img.shields.io/badge/license-MIT-e5e7eb?style=flat-square)](LICENSE)
+[English](README.md) · [简体中文](README.zh-CN.md)
 
 **最全、最好看、还能复现的 Claude、Codex 与自定义模型视觉测评工具。**
 
-让两个 Coding Agent 接收完全相同的真实提示词，在彼此隔离的工作区里完成作品；系统随后验证、录屏，并输出一条上下拼接的对比视频。你看到的是模型真正做出来的东西，而不只是一行分数。
+一条真实提示词，两个隔离 Agent，一份可以反复观看的视觉证据。
 
-[**浏览提示词**](docs/prompt-gallery.md) · [**查看模型**](docs/model-gallery.md) · [**运行一次对比**](docs/quick-start.zh-CN.md) · [**接入你的模型**](docs/add-your-model.zh-CN.md) · [English](README.md)
+<a href="docs/benchmark-gallery.md"><img src="https://img.shields.io/badge/浏览评测-7c3aed?style=for-the-badge" alt="浏览评测" /></a>
+<a href="docs/quick-start.zh-CN.md"><img src="https://img.shields.io/badge/运行自己的对比-0284c7?style=for-the-badge" alt="运行自己的对比" /></a>
 
 </div>
 
-## 值得拿来测模型的视觉提示词
+## 精选测评画面
 
-下面四个原帖分别启发了测评库里的四条提示词。它们是经过挑选的来源案例，不是本项目运行出来的测评成绩。点击截图可以直接打开对应的 X 原帖。
+<img src="assets/readme/benchmark-highlights.jpg" alt="六个精选原帖视频画面：程序化世界、沉没城市、日系街道、赛博朋克竞速、调查板和安妮女王复仇号" width="100%" />
+
+上图直接从公开原帖视频中挑选画面并拼成，没有包含 Tweet 界面。六个案例分别是[程序化 3D 世界](https://x.com/slash1sol/status/2084590501685043400)、[沉没城市](https://x.com/emollick/status/2064424775527624736)、[日系郊区街道](https://x.com/gmi_cloud/status/2080834581247435102)、[赛博朋克悬浮车竞速](https://x.com/eyishazyer/status/2072677773655838950)、[犯罪调查板](https://x.com/0x0SojalSec/status/2085440893994365214)和[安妮女王复仇号](https://x.com/TimJayas/status/2087474534924550433)。
+
+<sub>原帖媒体帧采集于 2026-09-03，用于提示词发现和来源说明，不是本仓库运行出来的测评成绩。媒体版权仍属于对应创作者；收录不代表本项目拥有、背书或已独立复现原帖效果。</sub>
+
+### 本项目真实运行样例
+
+<img src="assets/readme/sample-military-armory.png" alt="GPT-5.6 Sol 与 Claude Fable 5.1 的真实 Three.js 军械库对比画面" width="100%" />
+
+<p align="center"><sub>上方 GPT-5.6 Sol，下方 Claude Fable 5.1；两边使用同一条 Three.js 提示词和同一套录制策略。这个真实样例用于展示输出形式，不代表任何模型在所有任务中普遍获胜。</sub></p>
+
+## 浏览测评库
+
+<img src="assets/readme/explore.svg" alt="浏览 18 条 Three.js 提示词、2 条 Twigl 提示词、11 个模型配置和自定义模型组合" width="100%" />
 
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <a href="https://x.com/emollick/status/2064424775527624736"><img src="assets/readme/x-source-drowned-city.jpg" alt="Ethan Mollick 发布的无限新哥特式沉没城市 Twigl 提示词 X 原帖截图" width="100%" /></a><br />
-      <strong>无限新哥特式沉没城市</strong> · Twigl · 两轮<br />
-      <sub>来源展示：<a href="https://x.com/emollick">@emollick</a></sub><br />
-      <a href="docs/prompts/drowned-city-v1.md">查看原始提示词和来源 →</a>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://x.com/TimJayas/status/2087474534924550433"><img src="assets/readme/x-source-queen-annes-revenge.jpg" alt="Tim Jayas 发布的安妮女王复仇号 Three.js 提示词 X 原帖截图" width="100%" /></a><br />
-      <strong>安妮女王复仇号</strong> · Three.js<br />
-      <sub>来源展示：<a href="https://x.com/TimJayas">@TimJayas</a></sub><br />
-      <a href="docs/prompts/queen-annes-revenge-v1.md">查看原始提示词和来源 →</a>
-    </td>
+    <th width="33%">按测评方式</th>
+    <th width="34%">按模型系列</th>
+    <th width="33%">按结果状态</th>
   </tr>
   <tr>
-    <td width="50%" valign="top">
-      <a href="https://x.com/Bhavani_00007/status/2077798166729208223"><img src="assets/readme/x-source-military-armory.jpg" alt="Bhavy 发布的写实军械库 Three.js 模型对比 X 原帖截图" width="100%" /></a><br />
-      <strong>写实军械库</strong> · Three.js<br />
-      <sub>来源展示：<a href="https://x.com/Bhavani_00007">@Bhavani_00007</a></sub><br />
-      <a href="docs/prompts/military-armory-v1.md">查看原始提示词和来源 →</a>
+    <td valign="top">
+      <a href="docs/prompt-gallery.md#threejs-18"><strong>Three.js</strong></a> · 18 个世界<br />
+      <a href="docs/prompt-gallery.md#twigl-2"><strong>Twigl</strong></a> · 2 个 Shader
     </td>
-    <td width="50%" valign="top">
-      <a href="https://x.com/karankendre/status/2025624483000963350"><img src="assets/readme/x-source-japanese-castle.jpg" alt="Karan 发布的程序化日本城堡 Three.js 提示词 X 原帖截图" width="100%" /></a><br />
-      <strong>程序化日本城堡</strong> · Three.js<br />
-      <sub>来源展示：<a href="https://x.com/karankendre">@karankendre</a></sub><br />
-      <a href="docs/prompts/japanese-castle-v1.md">查看原始提示词和来源 →</a>
+    <td valign="top">
+      <a href="docs/model-gallery.md"><strong>Claude</strong></a> · <a href="docs/model-gallery.md"><strong>Codex</strong></a> · <a href="docs/model-gallery.md"><strong>DeepSeek</strong></a> · <a href="docs/model-gallery.md"><strong>GLM</strong></a> · <a href="docs/add-your-model.zh-CN.md"><strong>Custom</strong></a>
+    </td>
+    <td valign="top">
+      <a href="benchmarks/official/README.md"><strong>Official</strong></a> · <a href="benchmarks/community/README.md"><strong>Community</strong></a> · <a href="https://github.com/PenStairs/claude-codex-visual-benchmark/releases/latest"><strong>Latest</strong></a>
     </td>
   </tr>
 </table>
 
-<sub>截图于 2026-09-03 从公开 X Embed 获取。帖子和媒体版权仍属于各自创作者。收录截图是为了说明提示词来源，不代表本项目拥有、背书或已经独立复现原帖中的结果。</sub>
+[浏览全部提示词](docs/prompt-gallery.md) · [查看全部模型](docs/model-gallery.md) · [打开测评结果画廊](docs/benchmark-gallery.md)
 
-## 本项目的真实测评结果
+## 任意选择两个模型
 
-普通榜单会把模型压缩成一个数字；视觉编程任务能直接暴露构图、交互、运动、细节、运行质量和完成度。本项目把这些差异做成可回放、可查证的视频证据。
+比较哪两个模型完全由用户决定。可以选两个内置配置、添加两个私有配置，也可以混合使用。“模型配置”会同时声明模型、供应商端点、鉴权类别、Runner 和推理档位，所以同一个底层模型可以有多个不同执行路径。
 
-<img src="assets/readme/sample-military-armory.png" alt="GPT-5.6 Sol 与 Claude Fable 5.1 的真实 Three.js 军械库对比画面" width="100%" />
+<img src="assets/readme/runner-routing.svg" alt="模型 A 与模型 B 分别选择 Codex CLI 或 Claude Code Runner，写入隔离工作区后再合并视频" width="100%" />
 
-<p align="center"><sub>真实运行样例：上方 GPT‑5.6 Sol，下方 Claude Fable 5.1；两边使用同一条 Three.js 提示词和同一套录制策略。这个样例只展示作品差异，不代表任何模型在所有任务中普遍获胜。</sub></p>
+| Runner 路径 | 内置配置数 | 兼容方式 |
+|---|---:|---|
+| **Codex CLI** | 6 | OpenAI 原生登录、Responses 兼容端点 |
+| **Claude Code** | 5 | Anthropic 原生登录、Anthropic 兼容端点 |
+| **自定义配置** | 不限 | 经过验证、使用上述任一 Runner 的模型配置 |
 
-## 浏览整个测评库
+[添加 OpenAI Responses 兼容模型](examples/custom-models/openai-responses-compatible.json) · [添加 Anthropic 兼容模型](examples/custom-models/anthropic-compatible.json) · [阅读自定义模型说明](docs/add-your-model.zh-CN.md)
 
-<img src="assets/readme/explore.svg" alt="浏览 18 条 Three.js 提示词、2 条 Twigl 提示词、11 个模型配置和自定义模型组合" width="100%" />
+## 运行流程
 
-| 浏览入口 | 里面有什么 | 进入 |
-|---|---|---|
-| **Three.js 世界** | 18 条游戏、建筑、载具、模拟、程序化世界和交互提示词 | [浏览 Three.js 提示词](docs/prompt-gallery.md#threejs) |
-| **Twigl Shader** | 2 条实时 GLSL 提示词，其中一条包含第二轮原文 `Make it better` | [浏览 Twigl 提示词](docs/prompt-gallery.md#twigl) |
-| **模型配置** | 11 个可以直接运行的 Codex CLI 和 Claude Code 配置 | [查看完整模型清单](docs/model-gallery.md) |
-| **测评结果** | 按不同证据要求分开的官方测评与社区测评 | [打开结果画廊](docs/benchmark-gallery.md) |
+<img src="assets/readme/workflow.svg" alt="同一条提示词、两个 Agent、隔离工作区、验证、录屏和最终合并视频" width="100%" />
 
-每个用户都可以自己定义要比较的两个模型。既可以选择内置配置，也可以[接入任意兼容模型](docs/add-your-model.zh-CN.md)；首页不会默认所有人都必须进行某一组固定的 Claude 与 Codex 对比。
+**Same prompt → two agents → isolated workspaces → verify → record → merge。**
 
-## 这个项目解决什么问题
+两个 Agent 接收相同的标准化提示词字节和等价的干净脚手架。系统验证两边项目，按照相同的浏览器运动方式录制，再输出一条适合 X 发布的高清 H.264 对比视频。计划哈希、耗时、Token、录屏参数、修复、重试和失败原因都保留在本地运行报告中。
 
-| | 能力 | 你实际得到什么 |
-|---|---|---|
-| 🧩 | **任意选择两个模型** | 使用内置的 11 个配置，或者接入你自己的 Codex CLI / Claude Code 兼容模型。 |
-| 🎨 | **用视觉作品测模型** | 同时支持复杂 Three.js 场景和紧凑 Twigl Shader，不只比较代码文本。 |
-| 🔗 | **提示词来源清楚** | 每条内置提示词保留原帖链接、实际输入文本、来源方法和已有的点赞采集快照。 |
-| ⚖️ | **同条件对比** | 同一份提示词字节、等价工作区规则、干净脚手架、明确推理档位、统一录屏参数。 |
-| 🎬 | **直接得到 X 专版视频** | 输出高清 H.264 竖版对比视频，两边原生尺寸上下拼接。 |
-| 🧾 | **完整运行证据** | 本地保留确认哈希、耗时、Token、验证状态、录屏元数据和失败原因。 |
+整个流程默认在本地完成。代码和证据保存在被 Git 忽略的 `runs/`；凭据保留在 CLI 原生登录状态或环境变量里。只有用户明确选择发布时，最终视频才会上传。
 
-## 一条提示词，两个隔离 Agent，一条视觉证据
+## 每条提示词的案例
 
-<img src="assets/readme/workflow.svg" alt="选择两个模型和一条提示词，隔离运行、验证、录屏" width="100%" />
+每条提示词都有来自原帖媒体的视觉帧、直接 X 来源、实际测评文本、方法分类和独立证据页面。点击缩略图可以打开完整记录。
 
-整个流程默认在本地运行。模型通过各自配置的 Agent Runner 在你的机器上写代码，生成源码、日志、报告和录屏都保存在 `runs/`；只有你明确选择发布时，最终拼接视频才会上传。账号凭据保留在 CLI 原生登录状态或环境变量中，不会写进模型 JSON。
+<table>
+  <tr>
+    <td width="33%" valign="top"><a href="docs/prompts/anime-japanese-suburban-street-v1.md"><img src="assets/readme/prompt-thumbnails/anime-japanese-suburban-street-v1.jpg" alt="日系动漫郊区街道原帖视频画面" width="100%" /></a><br /><strong>日系动漫郊区街道</strong><br /><sub>Three.js · <a href="https://x.com/gmi_cloud/status/2080834581247435102">X 原帖</a></sub></td>
+    <td width="34%" valign="top"><a href="docs/prompts/city-eating-hole-game-v1.md"><img src="assets/readme/prompt-thumbnails/city-eating-hole-game-v1.jpg" alt="吞噬城市的黑洞游戏原帖视频画面" width="100%" /></a><br /><strong>吞噬城市的黑洞游戏</strong><br /><sub>Three.js · <a href="https://x.com/givros/status/2078391824343880158">X 原帖</a></sub></td>
+    <td width="33%" valign="top"><a href="docs/prompts/cod-zombies-clone-v1.md"><img src="assets/readme/prompt-thumbnails/cod-zombies-clone-v1.jpg" alt="COD 僵尸模式复刻原帖视频画面" width="100%" /></a><br /><strong>COD 僵尸模式复刻</strong><br /><sub>Three.js · <a href="https://x.com/om_patel5/status/2064549188671508690">X 原帖</a></sub></td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="docs/prompts/crime-investigation-board-v1.md"><img src="assets/readme/prompt-thumbnails/crime-investigation-board-v1.jpg" alt="3D 犯罪调查板原帖视频画面" width="100%" /></a><br /><strong>3D 犯罪调查板</strong><br /><sub>Three.js · <a href="https://x.com/0x0SojalSec/status/2085440893994365214">X 原帖</a></sub></td>
+    <td valign="top"><a href="docs/prompts/crossy-road-game-v1.md"><img src="assets/readme/prompt-thumbnails/crossy-road-game-v1.jpg" alt="天天过马路游戏原帖视频画面" width="100%" /></a><br /><strong>高质量《天天过马路》游戏</strong><br /><sub>Three.js · <a href="https://x.com/markksantos/status/2068962823007285628">X 原帖</a></sub></td>
+    <td valign="top"><a href="docs/prompts/cyberpunk-hovercar-racing-v1.md"><img src="assets/readme/prompt-thumbnails/cyberpunk-hovercar-racing-v1.jpg" alt="赛博朋克悬浮车竞速原帖视频画面" width="100%" /></a><br /><strong>赛博朋克悬浮车竞速</strong><br /><sub>Three.js · <a href="https://x.com/eyishazyer/status/2072677773655838950">X 原帖</a></sub></td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="docs/prompts/eiffel-tower-paris-v1.md"><img src="assets/readme/prompt-thumbnails/eiffel-tower-paris-v1.jpg" alt="巴黎埃菲尔铁塔原帖视频画面" width="100%" /></a><br /><strong>巴黎埃菲尔铁塔</strong><br /><sub>Three.js · <a href="https://x.com/Bhavani_00007/status/2079944268744155325">X 原帖</a></sub></td>
+    <td valign="top"><a href="docs/prompts/european-roulette-wheel-v1.md"><img src="assets/readme/prompt-thumbnails/european-roulette-wheel-v1.jpg" alt="写实欧式轮盘原帖视频画面" width="100%" /></a><br /><strong>写实欧式轮盘</strong><br /><sub>Three.js · <a href="https://x.com/thehypedotnews/status/2077924746415518033">X 原帖</a></sub></td>
+    <td valign="top"><a href="docs/prompts/japanese-castle-v1.md"><img src="assets/readme/prompt-thumbnails/japanese-castle-v1.jpg" alt="程序化日本城堡原帖视频画面" width="100%" /></a><br /><strong>程序化日本城堡</strong><br /><sub>Three.js · <a href="https://x.com/karankendre/status/2025624483000963350">X 原帖</a></sub></td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="docs/prompts/las-vegas-slot-machine-v1.md"><img src="assets/readme/prompt-thumbnails/las-vegas-slot-machine-v1.jpg" alt="拉斯维加斯老虎机原帖视频画面" width="100%" /></a><br /><strong>拉斯维加斯老虎机</strong><br /><sub>Three.js · <a href="https://x.com/thehypedotnews/status/2077924746415518033">X 原帖</a></sub></td>
+    <td valign="top"><a href="docs/prompts/military-armory-v1.md"><img src="assets/readme/prompt-thumbnails/military-armory-v1.jpg" alt="写实军械库原帖对比视频画面" width="100%" /></a><br /><strong>写实军械库</strong><br /><sub>Three.js · <a href="https://x.com/Bhavani_00007/status/2077798166729208223">结果原帖</a> · <a href="https://x.com/Bhavani_00007/status/2077895351600918899">提示词</a></sub></td>
+    <td valign="top"><a href="docs/prompts/offshore-rocket-landing-v1.md"><img src="assets/readme/prompt-thumbnails/offshore-rocket-landing-v1.jpg" alt="海上火箭回收模拟原帖视频画面" width="100%" /></a><br /><strong>海上火箭回收模拟</strong><br /><sub>Three.js · <a href="https://x.com/Cryptor_dot/status/2076083000777883785">X 原帖</a></sub></td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="docs/prompts/open-world-bazooka-rpg-v1.md"><img src="assets/readme/prompt-thumbnails/open-world-bazooka-rpg-v1.jpg" alt="开放世界火箭筒 RPG 原帖视频画面" width="100%" /></a><br /><strong>开放世界火箭筒 RPG</strong><br /><sub>Three.js · <a href="https://x.com/dangreenheck/status/2064736699469459753">X 原帖</a></sub></td>
+    <td valign="top"><a href="docs/prompts/procedural-3d-world-v1.md"><img src="assets/readme/prompt-thumbnails/procedural-3d-world-v1.jpg" alt="程序化可探索 3D 世界原帖视频画面" width="100%" /></a><br /><strong>程序化可探索 3D 世界</strong><br /><sub>Three.js · <a href="https://x.com/slash1sol/status/2084590501685043400">X 原帖</a></sub></td>
+    <td valign="top"><a href="docs/prompts/procedural-character-generator-v1.md"><img src="assets/readme/prompt-thumbnails/procedural-character-generator-v1.jpg" alt="程序化角色生成器原帖视频画面" width="100%" /></a><br /><strong>程序化角色生成器</strong><br /><sub>Three.js · <a href="https://x.com/TimJayas/status/2073250825858892241">X 原帖</a></sub></td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="docs/prompts/queen-annes-revenge-v1.md"><img src="assets/readme/prompt-thumbnails/queen-annes-revenge-v1.jpg" alt="安妮女王复仇号原帖视频画面" width="100%" /></a><br /><strong>安妮女王复仇号</strong><br /><sub>Three.js · <a href="https://x.com/TimJayas/status/2087474534924550433">X 原帖</a></sub></td>
+    <td valign="top"><a href="docs/prompts/steam-engine-prototype-v1.md"><img src="assets/readme/prompt-thumbnails/steam-engine-prototype-v1.jpg" alt="可运行蒸汽机原型原帖视频画面" width="100%" /></a><br /><strong>可运行蒸汽机原型</strong><br /><sub>Three.js · <a href="https://x.com/vikktorrrre/status/2090369860672856279">X 原帖</a></sub></td>
+    <td valign="top"><a href="docs/prompts/wright-flyer-v1.md"><img src="assets/readme/prompt-thumbnails/wright-flyer-v1.jpg" alt="莱特飞行器原帖视频画面" width="100%" /></a><br /><strong>莱特飞行器</strong><br /><sub>Three.js · <a href="https://x.com/TimJayas/status/2087277264744718510">X 原帖</a></sub></td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="docs/prompts/drowned-city-v1.md"><img src="assets/readme/prompt-thumbnails/drowned-city-v1.jpg" alt="无限新哥特式沉没城市原帖视频画面" width="100%" /></a><br /><strong>无限新哥特式沉没城市</strong><br /><sub>Twigl · 两轮 · <a href="https://x.com/emollick/status/2064424775527624736">X 原帖</a></sub></td>
+    <td valign="top"><a href="docs/prompts/lost-carcosa-v1.md"><img src="assets/readme/prompt-thumbnails/lost-carcosa-v1.jpg" alt="失落的卡尔克萨原帖视频画面" width="100%" /></a><br /><strong>失落的卡尔克萨</strong><br /><sub>Twigl · <a href="https://x.com/emollick/status/2091001394534707474">X 原帖</a></sub></td>
+    <td valign="top"><strong>添加下一个案例</strong><br /><br />一条来源清楚的 Three.js 或 Twigl 提示词，可以成为下一个测评案例。<br /><br /><a href="CONTRIBUTING_PROMPTS.md">贡献提示词 →</a></td>
+  </tr>
+</table>
 
-## 五分钟开始
+<sub>画面于 2026-09-03 从公开原帖媒体中提取。“已经关联来源”不等于“本次重新独立核验”。每个详情页会展示准确的证据状态、历史互动快照、改写说明和实际提示词字节。</sub>
 
-需要 Node.js 20.19+、FFmpeg、Playwright Chromium，以及至少一个已登录的 Runner（`codex` 或 `claude`）。
+## 快速开始 / 安装 Skill
 
 ```bash
 git clone https://github.com/PenStairs/claude-codex-visual-benchmark.git
@@ -106,107 +134,69 @@ npm run fetch:bgm
 npm run benchmark -- doctor
 ```
 
-先查看模型和提示词：
-
-```bash
-npm run benchmark -- list-models
-npm run benchmark -- list-prompts --method threejs
-npm run benchmark -- list-prompts --method twigl
-```
-
-正式消耗模型额度前，先生成可核对的运行计划：
-
-```bash
-npm run benchmark -- describe --model-a gpt-5.6-sol --model-b claude-fable-5-1 --method threejs --prompt military-armory-v1
-```
-
-确认模型、Runner、推理强度、提示词原文和执行方式后，把返回的哈希带入正式命令：
-
-```bash
-npm run benchmark -- run --model-a gpt-5.6-sol --model-b claude-fable-5-1 --method threejs --prompt military-armory-v1 --confirmed-plan <sha256>
-```
-
-首次付费运行前请阅读完整的[中文快速开始](docs/quick-start.zh-CN.md)。
-
-### 作为 Codex Skill 安装
-
-仓库根目录本身就是一个完整 Skill：
+把仓库安装成 Agent Skill：
 
 ```bash
 npx skills add PenStairs/claude-codex-visual-benchmark --global --all --copy
 ```
 
-也可以把仓库复制到 Agent 的 Skills 目录，然后让 Agent 使用 `$visual-code-model-benchmark`。Skill 会依次引导你选择两个模型、测评方式、提示词，展示运行计划，并在你明确确认后才开始消耗额度。
+然后让 Agent 使用 `$visual-code-model-benchmark`。它会依次引导用户选择两个模型、测评方法和提示词，展示运行计划，并在明确确认后才开始消耗额度。阅读[五分钟快速开始](docs/quick-start.zh-CN.md)或[完整执行流程](USAGE.zh-CN.md)。
 
-## 模型配置与 Runner
+## 公平性与证据链
 
-“模型配置”不只是模型名，还包括 Runner、端点、鉴权方式和推理强度。因此同一个底层模型可以分别拥有 Codex CLI 和 Claude Code 两份配置，这不是重复数据。
+<img src="assets/readme/provenance.svg" alt="原始 X 来源、提示词原文、不可变计划哈希、运行报告和最终视频" width="100%" />
 
-| Runner | 内置配置数 | 适合的接入方式 |
-|---|---:|---|
-| Codex CLI | 6 | OpenAI 原生登录、Responses 兼容端点 |
-| Claude Code | 5 | Anthropic 原生登录、Anthropic 兼容端点 |
+| 官方测评中统一控制 | 无法消除、必须披露 |
+|---|---|
+| 相同的标准化提示词字节和轮次顺序 | Codex CLI 或 Claude Code Runner 路径 |
+| 等价的干净脚手架和文件规则 | 供应商端点和鉴权类别 |
+| 明确推理策略，禁止静默降档 | 不同模型对 `high` 或 `max` 的具体含义 |
+| 并行生成和相同录制策略 | 硬件、录屏回退、修复、重试和失败 |
 
-Flash 模型默认使用各自配置里的最高推理档；其他模型默认 `high`。系统禁止自动降档，避免一次“高质量测评”在不知情时被改成低推理模式。
+- **推理强度：**Flash 配置使用 `max`，其他内置配置统一使用 `high`。
+- **超时：**60 分钟软提醒、180 分钟硬上限、15 分钟无活动上限；Three.js 启动等待放宽至 60 秒。
+- **硬件：**本地 CPU、GPU 和录屏回退方式必须写进运行披露，不能藏在所谓统一总榜后面。
+- **来源：**原帖 URL、提示词字节、方法来源、历史快照和改写说明分开记录。
+- **结果：**[官方测评](benchmarks/official/README.md)与[社区测评](benchmarks/community/README.md)回答不同问题，不会被静默混在一起。
 
-查看自动生成的[完整模型清单](docs/model-gallery.md)，或复制下面的模板：
-
-- [OpenAI Responses 兼容模型](examples/custom-models/openai-responses-compatible.json)
-- [Anthropic 兼容模型](examples/custom-models/anthropic-compatible.json)
-
-## 提示词效果、原帖和来源都写清楚
-
-当前内置库包括：
-
-- **18 条 Three.js 提示词**：游戏、模拟、建筑、载具、程序化世界和交互场景。
-- **2 条 Twigl 提示词**：实时 Shader，其中一条保留两轮对话，第二轮原文就是 `Make it better`。
-- **20 条已关联来源的提示词**，每条都带直接 X 帖子 URL，并在已有清单中保留点赞数和采集日期。
-
-[浏览全部提示词 →](docs/prompt-gallery.md)
-
-每个详情页都会展示实际发给模型的原始提示词、全部来源 URL、来源账号和帖子 ID、测评方式、轮次顺序、指标采集日期，以及任何公平性改写或疑似原文错误。
-
-<img src="assets/readme/provenance.svg" alt="从原帖、提示词、计划哈希、运行报告到最终视频的证据链" width="100%" />
-
-这里会刻意区分：**“已经关联原帖”不等于“本次重新独立核验完整来源”**。点赞数也只按历史采集快照展示，不冒充当前实时数据。详情见[提示词溯源说明](docs/prompt-provenance.md)。
-
-## 官方测评和社区测评分开
-
-每个用户都可以自定义模型，所以本项目不会把所有配置粗暴混进一个“宇宙总榜”。
-
-- **官方测评**：使用发布版本中的模型配置、提示词版本、Runner、强制推理策略、干净工作区和完整证据。
-- **社区测评**：使用自定义模型、端点、提示词、Runner 补丁、录制策略或硬件；有价值，但必须单独披露配置。
-
-两者都欢迎，只是回答的问题不同。详见[官方与社区测评](docs/official-vs-community.md)和[公平性规则](docs/fairness.md)。
-
-## 目录结构
-
-```text
-config/models/          模型配置
-config/prompts/         带来源的 Three.js / Twigl 提示词
-config/methods/         测评脚手架与文件契约
-assets/templates/       两个模型拿到的隔离工作区
-scripts/                调度、验证、录屏与测试
-schemas/                自定义扩展的 JSON Schema
-examples/               可复制的自定义模型与提示词样例
-docs/                   使用文档和自动生成画廊
-benchmarks/             官方/社区结果发布规范
-runs/                   本地结果，始终不进入 Git
-```
+一次运行只能支持这样的结论：在已经声明的提示词、模型配置、Runner、推理强度、策略和硬件下，模型产出了这些结果；不能证明某个模型在所有任务中普遍更强。详见[公平性规则](docs/fairness.md)和[提示词溯源规则](docs/prompt-provenance.md)。
 
 ## 参与贡献
 
-你可以贡献新模型、新提示词、Runner 改进、可复现 Bug 或社区测评结果。请先阅读 [CONTRIBUTING.md](CONTRIBUTING.md)，再看专门的[模型贡献说明](CONTRIBUTING_MODELS.md)或[提示词贡献说明](CONTRIBUTING_PROMPTS.md)。
+- [添加模型配置](CONTRIBUTING_MODELS.md)
+- [添加有来源的提示词](CONTRIBUTING_PROMPTS.md)
+- [提交社区测评](benchmarks/community/README.md)
+- [改进 Runner 或录屏流程](CONTRIBUTING.md)
+- [报告可以复现的问题](https://github.com/PenStairs/claude-codex-visual-benchmark/issues)
 
-## 安全、隐私与独立性
+每项修改都会经过配置、提示词契约、超时行为、浏览器运动、录屏质量、自动文档和发布安全检查。
 
-- API Key 只放环境变量，永远不要提交。
-- 所有模型工作区和证据默认只在 `runs/` 本地保存。
-- 模型生成的代码属于不可信代码；本项目会限制脚手架和网络访问，但不是面向恶意代码的强安全沙箱。
-- 使用订阅套餐或第三方网关前，请自行确认服务条款。
+## 社区与项目状态
 
-完整说明见 [SECURITY.md](SECURITY.md)。这是 [PenStairs](https://github.com/PenStairs) 发起的独立社区项目，与 Anthropic、OpenAI、DeepSeek、智谱 AI、Three.js、Twigl、X 不存在隶属、赞助或官方背书关系。
+[![版本](https://img.shields.io/badge/version-0.8.0-7c6cff?style=flat-square)](https://github.com/PenStairs/claude-codex-visual-benchmark/releases/tag/v0.8.0)
+[![模型配置](https://img.shields.io/badge/model_profiles-11-38bdf8?style=flat-square)](docs/model-gallery.md)
+[![提示词](https://img.shields.io/badge/source_linked_prompts-20-f59e0b?style=flat-square)](docs/prompt-gallery.md)
+[![CI](https://img.shields.io/github/actions/workflow/status/PenStairs/claude-codex-visual-benchmark/ci.yml?branch=main&style=flat-square&label=checks)](https://github.com/PenStairs/claude-codex-visual-benchmark/actions)
+[![开源协议](https://img.shields.io/badge/license-MIT-e5e7eb?style=flat-square)](LICENSE)
 
-## 开源协议
+[Discussions](https://github.com/PenStairs/claude-codex-visual-benchmark/discussions) · [Roadmap](ROADMAP.md) · [最新版本](https://github.com/PenStairs/claude-codex-visual-benchmark/releases/latest) · [更新记录](CHANGELOG.md) · [完整文档](docs/README.md)
 
-代码和本项目原创文档采用 [MIT License](LICENSE)。提示词原文和外部帖子可能仍归原作者所有；保留来源链接不等于重新授权第三方内容。可选背景音乐会单独下载，并遵循自己的[许可说明](assets/audio/brainiac-mixkit-license.txt)。
+### Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=PenStairs/claude-codex-visual-benchmark&type=Date)](https://www.star-history.com/#PenStairs/claude-codex-visual-benchmark&Date)
+
+## 安全 / 免责声明 / 开源协议
+
+API Key 只能放在环境变量中，并且需要把模型生成的代码视为不可信代码。受限的本地脚手架不是面向恶意代码的强安全沙箱。使用订阅套餐或第三方网关前，请自行核对服务条款。详见 [SECURITY.md](SECURITY.md)。
+
+这是 [PenStairs](https://github.com/PenStairs) 发起的独立社区项目，与 Anthropic、OpenAI、DeepSeek、智谱 AI、Three.js、Twigl 或 X 不存在隶属、赞助或官方背书关系。项目中的产品名称只用于说明兼容性。
+
+代码和本项目原创文档采用 [MIT License](LICENSE)。提示词、外部帖子和来源视频帧可能仍归原作者所有；保留来源不代表重新授权第三方内容。可选背景音乐遵循单独的[许可说明](assets/audio/brainiac-mixkit-license.txt)。
+
+<div align="center">
+
+**选择两个模型，固定一条提示词，让作品自己说话。**
+
+[浏览评测](docs/benchmark-gallery.md) · [运行自己的对比](docs/quick-start.zh-CN.md)
+
+</div>

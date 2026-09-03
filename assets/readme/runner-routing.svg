@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="430" viewBox="0 0 1600 430" role="img" aria-labelledby="title desc">
+  <title id="title">Each model profile independently chooses a compatible runner</title>
+  <desc id="desc">Model A and Model B can each use Codex CLI or Claude Code, then write to separate workspaces under the same benchmark contract.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07101f"/><stop offset="1" stop-color="#11142a"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="7" stdDeviation="10" flood-opacity=".3"/></filter>
+  </defs>
+  <rect width="1600" height="430" rx="28" fill="url(#bg)"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="70" y="58" fill="#94a3b8" font-size="18" font-weight="700" letter-spacing="3">BRING ANY TWO MODELS</text>
+    <text x="70" y="95" fill="#f8fafc" font-size="27" font-weight="700">A profile declares the model, endpoint, authentication, runner, and reasoning level.</text>
+    <path d="M340 200H535M340 330H535M805 200H1000M805 330H1000M1270 265H1455" stroke="#41516e" stroke-width="3" stroke-linecap="round"/>
+    <path d="M470 200l-12-8v16zM470 330l-12-8v16zM935 200l-12-8v16zM935 330l-12-8v16zM1390 265l-12-8v16z" fill="#78d8ff"/>
+    <g filter="url(#shadow)">
+      <rect x="70" y="151" width="270" height="98" rx="18" fill="#16223a" stroke="#ffad45" stroke-width="2"/>
+      <rect x="70" y="281" width="270" height="98" rx="18" fill="#16223a" stroke="#a782ff" stroke-width="2"/>
+      <rect x="470" y="151" width="335" height="98" rx="18" fill="#16223a" stroke="#78d8ff" stroke-width="2"/>
+      <rect x="470" y="281" width="335" height="98" rx="18" fill="#16223a" stroke="#d5dfff" stroke-width="2"/>
+      <rect x="935" y="151" width="335" height="98" rx="18" fill="#16223a" stroke="#80e5c0" stroke-width="2"/>
+      <rect x="935" y="281" width="335" height="98" rx="18" fill="#16223a" stroke="#80e5c0" stroke-width="2"/>
+      <rect x="1390" y="216" width="150" height="98" rx="18" fill="#16223a" stroke="#a782ff" stroke-width="2"/>
+    </g>
+    <g fill="#f8fafc" text-anchor="middle" font-size="20" font-weight="700">
+      <text x="205" y="195">MODEL A PROFILE</text><text x="205" y="325">MODEL B PROFILE</text>
+      <text x="638" y="190">RUNNER A</text><text x="638" y="320">RUNNER B</text>
+      <text x="1102" y="190">WORKSPACE A</text><text x="1102" y="320">WORKSPACE B</text>
+      <text x="1465" y="257">MERGED</text><text x="1465" y="282">VIDEO</text>
+    </g>
+    <g fill="#94a3b8" text-anchor="middle" font-size="15">
+      <text x="205" y="222">built-in or custom</text><text x="205" y="352">built-in or custom</text>
+      <text x="638" y="218">Codex CLI or Claude Code</text><text x="638" y="348">Codex CLI or Claude Code</text>
+      <text x="1102" y="218">same scaffold</text><text x="1102" y="348">same scaffold</text>
+    </g>
+    <text x="850" y="414" fill="#64748b" text-anchor="middle" font-size="14">Either profile can use either supported runner path; the two sides do not need to share a provider.</text>
+  </g>
+</svg>

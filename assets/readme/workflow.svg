@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
-  <title id="title">Benchmark workflow</title><desc id="desc">Choose two models, select one method and prompt, run in isolated workspaces, verify, record, and compose a comparison video.</desc>
-  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#ffad45"/><stop offset=".52" stop-color="#78d8ff"/><stop offset="1" stop-color="#a782ff"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity=".28"/></filter></defs>
-  <rect width="1200" height="300" rx="28" fill="#07101f"/>
-  <path d="M115 150H1085" stroke="url(#g)" stroke-width="4" stroke-linecap="round" opacity=".55"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="300" viewBox="0 0 1600 300" role="img" aria-labelledby="title desc">
+  <title id="title">Benchmark workflow</title><desc id="desc">Use one prompt, run two agents in isolated workspaces, verify, record, and merge their outputs into one comparison video.</desc>
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#ffad45"/><stop offset=".48" stop-color="#78d8ff"/><stop offset="1" stop-color="#a782ff"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity=".28"/></filter></defs>
+  <rect width="1600" height="300" rx="28" fill="#07101f"/>
+  <path d="M130 150H1470" stroke="url(#g)" stroke-width="4" stroke-linecap="round" opacity=".55"/>
   <g font-family="Segoe UI,Arial,sans-serif" text-anchor="middle" fill="#edf4ff">
-    <g transform="translate(115 150)" filter="url(#s)"><circle r="55" fill="#16223a" stroke="#ffad45" stroke-width="2"/><text y="-5" font-size="18" font-weight="700">2 MODELS</text><text y="21" font-size="14" fill="#9fb0ca">any profiles</text></g>
-    <g transform="translate(355 150)" filter="url(#s)"><circle r="55" fill="#16223a" stroke="#d5dfff" stroke-width="2"/><text y="-5" font-size="18" font-weight="700">1 PROMPT</text><text y="21" font-size="14" fill="#9fb0ca">same bytes</text></g>
-    <g transform="translate(600 150)" filter="url(#s)"><circle r="55" fill="#16223a" stroke="#78d8ff" stroke-width="2"/><text y="-5" font-size="18" font-weight="700">ISOLATE</text><text y="21" font-size="14" fill="#9fb0ca">clean workspaces</text></g>
-    <g transform="translate(845 150)" filter="url(#s)"><circle r="55" fill="#16223a" stroke="#80e5c0" stroke-width="2"/><text y="-5" font-size="18" font-weight="700">VERIFY</text><text y="21" font-size="14" fill="#9fb0ca">run + inspect</text></g>
-    <g transform="translate(1085 150)" filter="url(#s)"><circle r="55" fill="#16223a" stroke="#a782ff" stroke-width="2"/><text y="-5" font-size="18" font-weight="700">RECORD</text><text y="21" font-size="14" fill="#9fb0ca">X-ready video</text></g>
+    <g transform="translate(130 150)" filter="url(#s)"><circle r="55" fill="#16223a" stroke="#ffad45" stroke-width="2"/><text y="-5" font-size="18" font-weight="700">1 PROMPT</text><text y="21" font-size="14" fill="#9fb0ca">same bytes</text></g>
+    <g transform="translate(398 150)" filter="url(#s)"><circle r="55" fill="#16223a" stroke="#d5dfff" stroke-width="2"/><text y="-5" font-size="18" font-weight="700">2 AGENTS</text><text y="21" font-size="14" fill="#9fb0ca">any profiles</text></g>
+    <g transform="translate(666 150)" filter="url(#s)"><circle r="55" fill="#16223a" stroke="#78d8ff" stroke-width="2"/><text y="-5" font-size="18" font-weight="700">ISOLATE</text><text y="21" font-size="14" fill="#9fb0ca">clean workspaces</text></g>
+    <g transform="translate(934 150)" filter="url(#s)"><circle r="55" fill="#16223a" stroke="#80e5c0" stroke-width="2"/><text y="-5" font-size="18" font-weight="700">VERIFY</text><text y="21" font-size="14" fill="#9fb0ca">run + inspect</text></g>
+    <g transform="translate(1202 150)" filter="url(#s)"><circle r="55" fill="#16223a" stroke="#8fd5ff" stroke-width="2"/><text y="-5" font-size="18" font-weight="700">RECORD</text><text y="21" font-size="14" fill="#9fb0ca">matched capture</text></g>
+    <g transform="translate(1470 150)" filter="url(#s)"><circle r="55" fill="#16223a" stroke="#a782ff" stroke-width="2"/><text y="-5" font-size="18" font-weight="700">MERGE</text><text y="21" font-size="14" fill="#9fb0ca">one X-ready video</text></g>
   </g>
 </svg>
