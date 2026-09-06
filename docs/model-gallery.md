@@ -1,7 +1,7 @@
 <!-- GENERATED FILE. Run npm run generate:docs. -->
 # Model gallery
 
-The repository currently ships **11 runnable profiles**. A profile is a model + runner + endpoint + authentication + reasoning policy, so the same model may intentionally appear once per runner.
+The repository currently ships **12 runnable profiles**. A profile is a model + runner + endpoint + authentication + reasoning policy, so the same model may intentionally appear once per runner.
 
 | Model profile | Profile ID | Runner | Provider | Default reasoning | Authentication | Methods |
 |---|---|---|---|---|---|---|
@@ -16,6 +16,7 @@ The repository currently ships **11 runnable profiles**. A profile is a model + 
 | GLM-5.3-Flash (Claude Code) | `glm-5.3-flash-claude` | Claude Code | Z.AI Coding Plan | **max** | `GLM_CODING_PLAN_KEY` | threejs, twigl |
 | GLM-5.3-Flash | `glm-5.3-flash` | Codex CLI | Z.AI Coding Plan | **max** | `GLM_CODING_PLAN_KEY` | threejs, twigl |
 | GPT-5.6 Sol | `gpt-5.6-sol` | Codex CLI | OpenAI | **high** | codex-login | threejs, twigl |
+| GPT-6 Astra | `gpt-6-astra` | Codex CLI | OpenAI | **high** | codex-login | threejs, twigl |
 
 ## Bring your own model
 

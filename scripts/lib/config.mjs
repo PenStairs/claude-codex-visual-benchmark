@@ -406,7 +406,7 @@ export async function listModels({ includeDisabled = false } = {}) {
     model.pricing = pricingCatalog.models[model.model]
       ? {
         ...pricingCatalog.models[model.model],
-        checkedAt: pricingCatalog.checkedAt,
+        checkedAt: pricingCatalog.models[model.model].checkedAt ?? pricingCatalog.checkedAt,
         currency: pricingCatalog.currency,
         unitTokens: pricingCatalog.unitTokens,
       }

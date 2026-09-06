@@ -6,6 +6,10 @@ Each file under `config/models/` is one selectable model. Add a new model by cop
 
 Naming convention: a profile that runs under Claude Code carries the `-claude` suffix (`deepseek-v4-pro-claude`), so the same provider model can exist once per runner and the user can choose a same-harness pairing.
 
+GPT-6 Astra uses profile/model ID `gpt-6-astra`, the Codex runner, and the existing `codex-login` authentication. Both Three.js and Twigl are supported, with `high` fixed as the benchmark default. Its profile lists the officially documented `low`, `medium`, `high`, `xhigh`, and `max` presets. Model ID, presets, and public API rates were checked against the [official model page](https://developers.openai.com/api/docs/models/gpt-6-astra) on 2026-09-06. Pricing entries may set their own `checkedAt` date; entries without one retain the catalog date.
+
+Run the static `doctor --models gpt-6-astra` check before an evaluation. If it reports that the model is absent from the Codex catalog, update the CLI actually used by the runner. For npm installations, `npm install --global @openai/codex@latest` works in PowerShell and macOS/Linux shells. On Windows this runner prefers the npm Codex installation when present, so updating only the desktop app may leave the benchmark CLI outdated. A successful static check does not prove account access to a paid model call.
+
 Never put a key value in JSON. For an API or subscription key, use:
 
 ```json

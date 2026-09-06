@@ -25,7 +25,7 @@
 
 ## 浏览测评库
 
-<img src="assets/readme/explore.svg" alt="浏览 18 条 Three.js 提示词、2 条 Twigl 提示词、11 个模型配置和自定义模型组合" width="100%" />
+<img src="assets/readme/explore.svg" alt="浏览 18 条 Three.js 提示词、2 条 Twigl 提示词、12 个模型配置和自定义模型组合" width="100%" />
 
 <table>
   <tr>
@@ -168,7 +168,7 @@ npx skills add PenStairs/claude-codex-visual-benchmark --global --all --copy
 ## 社区与项目状态
 
 [![版本](https://img.shields.io/badge/version-0.8.0-7c6cff?style=flat-square)](https://github.com/PenStairs/claude-codex-visual-benchmark/releases/tag/v0.8.0)
-[![模型配置](https://img.shields.io/badge/model_profiles-11-38bdf8?style=flat-square)](docs/model-gallery.md)
+[![模型配置](https://img.shields.io/badge/model_profiles-12-38bdf8?style=flat-square)](docs/model-gallery.md)
 [![提示词](https://img.shields.io/badge/source_linked_prompts-20-f59e0b?style=flat-square)](docs/prompt-gallery.md)
 [![CI](https://img.shields.io/github/actions/workflow/status/PenStairs/claude-codex-visual-benchmark/ci.yml?branch=main&style=flat-square&label=checks)](https://github.com/PenStairs/claude-codex-visual-benchmark/actions)
 [![开源协议](https://img.shields.io/badge/license-MIT-e5e7eb?style=flat-square)](LICENSE)

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "gpt-6-astra",
+  "displayName": "GPT-6 Astra",
+  "enabled": true,
+  "runner": "codex",
+  "model": "gpt-6-astra",
+  "provider": {
+    "id": "openai"
+  },
+  "authentication": {
+    "type": "codex-login"
+  },
+  "reasoning": {
+    "default": "high",
+    "allowed": ["low", "medium", "high", "xhigh", "max"]
+  },
+  "supportedMethods": ["threejs", "twigl"]
+}

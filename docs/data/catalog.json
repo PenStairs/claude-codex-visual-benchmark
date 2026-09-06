@@ -5,8 +5,8 @@
     "config/prompts"
   ],
   "counts": {
-    "modelProfiles": 11,
-    "modelIdentities": 7,
+    "modelProfiles": 12,
+    "modelIdentities": 8,
     "runners": 2,
     "prompts": 20,
     "threejsPrompts": 18,
@@ -126,6 +126,17 @@
     {
       "id": "gpt-5.6-sol",
       "displayName": "GPT-5.6 Sol",
+      "runner": "codex",
+      "provider": "openai",
+      "reasoning": "high",
+      "methods": [
+        "threejs",
+        "twigl"
+      ]
+    },
+    {
+      "id": "gpt-6-astra",
+      "displayName": "GPT-6 Astra",
       "runner": "codex",
       "provider": "openai",
       "reasoning": "high",

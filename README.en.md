@@ -25,7 +25,7 @@ A tour of six standout visual cases: [Procedural 3D World](https://x.com/slash1s
 
 ## Explore the Benchmark
 
-<img src="assets/readme/explore.svg" alt="Explore 18 Three.js prompts, 2 Twigl prompts, 11 model profiles, and custom model pairs" width="100%" />
+<img src="assets/readme/explore.svg" alt="Explore 18 Three.js prompts, 2 Twigl prompts, 12 model profiles, and custom model pairs" width="100%" />
 
 <table>
   <tr>
@@ -168,7 +168,7 @@ Every change is checked against configuration, prompt contracts, timeout behavio
 ## Community and Project Status
 
 [![Version](https://img.shields.io/badge/version-0.8.0-7c6cff?style=flat-square)](https://github.com/PenStairs/claude-codex-visual-benchmark/releases/tag/v0.8.0)
-[![Model profiles](https://img.shields.io/badge/model_profiles-11-38bdf8?style=flat-square)](docs/model-gallery.md)
+[![Model profiles](https://img.shields.io/badge/model_profiles-12-38bdf8?style=flat-square)](docs/model-gallery.md)
 [![Prompts](https://img.shields.io/badge/source_linked_prompts-20-f59e0b?style=flat-square)](docs/prompt-gallery.md)
 [![CI](https://img.shields.io/github/actions/workflow/status/PenStairs/claude-codex-visual-benchmark/ci.yml?branch=main&style=flat-square&label=checks)](https://github.com/PenStairs/claude-codex-visual-benchmark/actions)
 [![License](https://img.shields.io/badge/license-MIT-e5e7eb?style=flat-square)](LICENSE)

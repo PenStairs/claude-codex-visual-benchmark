@@ -6,6 +6,7 @@ All notable changes follow [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ### Added
 
+- GPT-6 Astra Codex profile with high reasoning, Three.js/Twigl support, and official API-equivalent pricing checked on 2026-09-06.
 - Public English and Chinese project documentation.
 - Generated model and prompt galleries with one detail page per prompt.
 - Bring-your-own-model and bring-your-own-prompt examples and JSON Schemas.
