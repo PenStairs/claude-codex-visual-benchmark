@@ -55,7 +55,7 @@ The final handoff also identifies the soundtrack title and license.
 - A model that exhausts its repair budget receives a standardized failure panel in the comparison video. Abort without publishing on shared infrastructure failures.
 - Encode and validate `comparison.mp4` as X-ready H.264 High/yuv420p within the configured X resolution, aspect-ratio, frame-rate, bitrate, duration, and file-size limits. Upload only this MP4; keep source, logs, individual recordings, and verification evidence local.
 - Mix the pinned local `Brainiac` asset into every final MP4 as stereo AAC using the configured start offset, low background volume, and fades. Validate the audio stream and asset SHA-256. Mixkit permits the resulting social-media video use, but do not redistribute the raw MP3 in a Skill archive; recipients run `npm run fetch:bgm` to download their own local copy under the then-current license.
-- Do not use CC Switch for the bundled DeepSeek V4 Flash/Pro or GLM-5.3/GLM-5.3-Flash Coding Plan profiles. The `codex` profiles use each provider's official Responses endpoint; the `claude` profiles use each provider's official Anthropic-compatible endpoint.
+- Do not use CC Switch for the bundled DeepSeek V4.1 Flash / V4 Pro or GLM-5.3/GLM-5.3-Flash Coding Plan profiles. The `codex` profiles use each provider's official Responses endpoint; the `claude` profiles use each provider's official Anthropic-compatible endpoint.
 
 ## References
 

@@ -36,28 +36,6 @@
       ]
     },
     {
-      "id": "deepseek-v4-flash-claude",
-      "displayName": "DeepSeek V4 Flash (Claude Code)",
-      "runner": "claude",
-      "provider": "deepseek",
-      "reasoning": "max",
-      "methods": [
-        "threejs",
-        "twigl"
-      ]
-    },
-    {
-      "id": "deepseek-v4-flash",
-      "displayName": "DeepSeek V4 Flash",
-      "runner": "codex",
-      "provider": "deepseek",
-      "reasoning": "max",
-      "methods": [
-        "threejs",
-        "twigl"
-      ]
-    },
-    {
       "id": "deepseek-v4-pro-claude",
       "displayName": "DeepSeek V4 Pro (Claude Code)",
       "runner": "claude",
@@ -74,6 +52,28 @@
       "runner": "codex",
       "provider": "deepseek",
       "reasoning": "high",
+      "methods": [
+        "threejs",
+        "twigl"
+      ]
+    },
+    {
+      "id": "deepseek-v4.1-flash-claude",
+      "displayName": "DeepSeek V4.1 Flash (Claude Code)",
+      "runner": "claude",
+      "provider": "deepseek",
+      "reasoning": "max",
+      "methods": [
+        "threejs",
+        "twigl"
+      ]
+    },
+    {
+      "id": "deepseek-v4.1-flash",
+      "displayName": "DeepSeek V4.1 Flash",
+      "runner": "codex",
+      "provider": "deepseek",
+      "reasoning": "max",
       "methods": [
         "threejs",
         "twigl"

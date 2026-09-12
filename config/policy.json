@@ -3,8 +3,8 @@
   "reasoningPolicy": {
     "defaultRequired": "high",
     "requiredByProfile": {
-      "deepseek-v4-flash": "max",
-      "deepseek-v4-flash-claude": "max",
+      "deepseek-v4.1-flash": "max",
+      "deepseek-v4.1-flash-claude": "max",
       "glm-5.3-flash": "max",
       "glm-5.3-flash-claude": "max"
     },

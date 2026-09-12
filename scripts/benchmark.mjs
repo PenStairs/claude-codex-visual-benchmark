@@ -456,8 +456,8 @@ async function selfTestCommand(options) {
     throw new BenchmarkError(`Enabled model profiles are missing public list-price configuration: ${modelsWithoutPricing.join(', ')}`, { kind: 'configuration' });
   }
   const expectedMaxProfiles = [
-    'deepseek-v4-flash',
-    'deepseek-v4-flash-claude',
+    'deepseek-v4.1-flash',
+    'deepseek-v4.1-flash-claude',
     'glm-5.3-flash',
     'glm-5.3-flash-claude',
   ];

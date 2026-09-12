@@ -7,10 +7,10 @@ The repository currently ships **12 runnable profiles**. A profile is a model + 
 |---|---|---|---|---|---|---|
 | Claude Fable 5.1 | `claude-fable-5-1` | Claude Code | Anthropic | **high** | claude-login | threejs, twigl |
 | Claude Opus 5 | `claude-opus-5` | Claude Code | Anthropic | **high** | claude-login | threejs, twigl |
-| DeepSeek V4 Flash (Claude Code) | `deepseek-v4-flash-claude` | Claude Code | DeepSeek | **max** | `DEEPSEEK_API_KEY` | threejs, twigl |
-| DeepSeek V4 Flash | `deepseek-v4-flash` | Codex CLI | DeepSeek | **max** | `DEEPSEEK_API_KEY` | threejs, twigl |
 | DeepSeek V4 Pro (Claude Code) | `deepseek-v4-pro-claude` | Claude Code | DeepSeek | **high** | `DEEPSEEK_API_KEY` | threejs, twigl |
 | DeepSeek V4 Pro | `deepseek-v4-pro` | Codex CLI | DeepSeek | **high** | `DEEPSEEK_API_KEY` | threejs, twigl |
+| DeepSeek V4.1 Flash (Claude Code) | `deepseek-v4.1-flash-claude` | Claude Code | DeepSeek | **max** | `DEEPSEEK_API_KEY` | threejs, twigl |
+| DeepSeek V4.1 Flash | `deepseek-v4.1-flash` | Codex CLI | DeepSeek | **max** | `DEEPSEEK_API_KEY` | threejs, twigl |
 | GLM-5.3 Coding Plan (Claude Code) | `glm-5.3-coding-plan-claude` | Claude Code | Z.AI Coding Plan | **high** | `GLM_CODING_PLAN_KEY` | threejs, twigl |
 | GLM-5.3 Coding Plan | `glm-5.3-coding-plan` | Codex CLI | Z.AI Coding Plan | **high** | `GLM_CODING_PLAN_KEY` | threejs, twigl |
 | GLM-5.3-Flash (Claude Code) | `glm-5.3-flash-claude` | Claude Code | Z.AI Coding Plan | **max** | `GLM_CODING_PLAN_KEY` | threejs, twigl |
@@ -19,6 +19,8 @@ The repository currently ships **12 runnable profiles**. A profile is a model + 
 | GPT-6 Astra | `gpt-6-astra` | Codex CLI | OpenAI | **high** | codex-login | threejs, twigl |
 
 ## Bring your own model
+
+DeepSeek routing note (2026-09-12): the V4.1 Flash profiles replace the old V4 Flash entries and call the official `deepseek-flash` alias. DeepSeek also routes the legacy API name to V4.1 Flash; it no longer selects a separate old model. Historical run reports remain unchanged. See [configuration and official sources](../references/configuration.md#deepseek-v41-flash-verified-2026-09-12).
 
 Copy the closest example from [`examples/custom-models`](../examples/custom-models/) into `config/models/`, give it a unique profile ID, and keep credentials in environment variables. See [Add your model](add-your-model.md).
 

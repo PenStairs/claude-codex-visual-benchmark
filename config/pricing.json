@@ -4,6 +4,52 @@
   "currency": "USD",
   "unitTokens": 1000000,
   "models": {
+    "deepseek-flash": {
+      "displayName": "DeepSeek V4.1 Flash",
+      "checkedAt": "2026-09-12",
+      "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "sourceLabel": "DeepSeek API Models & Pricing",
+      "schedule": {
+        "type": "weekly-utc",
+        "selection": "lowest",
+        "peakPlanId": "peak",
+        "offPeakPlanId": "off-peak",
+        "peakWeekdays": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "peakWindows": [
+          {
+            "startMinute": 60,
+            "endMinute": 240
+          },
+          {
+            "startMinute": 360,
+            "endMinute": 600
+          }
+        ],
+        "peakRates": {
+          "input": 0.3,
+          "cachedInput": 0.006,
+          "cacheWriteInput": 0.3,
+          "output": 1.2
+        },
+        "offPeakRates": {
+          "input": 0.15,
+          "cachedInput": 0.003,
+          "cacheWriteInput": 0.15,
+          "output": 0.6
+        }
+      },
+      "notes": [
+        "Official model alias deepseek-flash resolves to DeepSeek V4.1 Flash as checked on 2026-09-12; it is not an immutable version pin.",
+        "The benchmark's lowest-price policy uses off-peak rates regardless of execution time; this is not the actual settled charge.",
+        "DeepSeek manages caching automatically; cache-write input uses the regular input rate."
+      ]
+    },
     "gpt-6-astra": {
       "displayName": "GPT-6 Astra",
       "checkedAt": "2026-09-06",

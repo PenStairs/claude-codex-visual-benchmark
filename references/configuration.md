@@ -2,6 +2,12 @@
 
 ## Models
 
+### DeepSeek V4.1 Flash (verified 2026-09-12)
+
+Select `deepseek-v4.1-flash` for Codex or `deepseek-v4.1-flash-claude` for Claude Code. Both call the official `deepseek-flash` model alias, reuse `DEEPSEEK_API_KEY`, support Three.js/Twigl, and fix creative and repair reasoning to `max`. The Codex catalog declares 1M context and text/image input. Public prices and routing were checked against [Models & Pricing](https://api-docs.deepseek.com/quick_start/pricing/); integration metadata follows the official [Codex](https://api-docs.deepseek.com/quick_start/agent_integrations/codex/) and [Claude Code](https://api-docs.deepseek.com/quick_start/agent_integrations/claude_code/) guides.
+
+The official `deepseek-flash` name is a moving alias, not a permanent V4.1 version pin. Legacy `deepseek-v4-flash` requests now also route to V4.1 Flash. The two legacy V4 Flash selectable profiles have been replaced by the V4.1 profiles for correct current labeling and pricing. Historical run reports and the legacy catalog/pricing evidence remain unchanged.
+
 Each file under `config/models/` is one selectable model. Add a new model by copying a profile and changing its stable `id`, user-facing `displayName`, `runner` (`codex` or `claude`; see [runners.md](runners.md)), the runner-facing `model` id, provider, authentication mode, supported reasoning levels, and supported methods. Profiles without a `runner` field default to `codex`.
 
 Naming convention: a profile that runs under Claude Code carries the `-claude` suffix (`deepseek-v4-pro-claude`), so the same provider model can exist once per runner and the user can choose a same-harness pairing.
@@ -67,7 +73,7 @@ Third-party models reachable through an Anthropic-compatible endpoint declare `p
 
 The bundled `deepseek-v4-pro-claude` and `glm-5.3-coding-plan-claude` profiles reuse `DEEPSEEK_API_KEY` and `GLM_CODING_PLAN_KEY`, so no new secrets are needed to run those models under Claude Code. To add another provider, copy one of those two profiles and change the model id, `baseUrl`, and environment variable name; confirm both with the provider's Claude Code integration guide first. Most Chinese open-model providers (DeepSeek, Zhipu/Z.AI, Moonshot, MiniMax, Alibaba Qwen) document such an endpoint because it is what their own Claude Code integrations use.
 
-The bundled DeepSeek V4 Flash and Pro profiles call the provider's official endpoint directly and both read only `DEEPSEEK_API_KEY`. Flash uses model ID `deepseek-v4-flash`, the native Codex Responses path, a 1M context catalog, and the provider-supported `low`, `high`, and `max` reasoning presets with `max` as the benchmark default. Pro uses model ID `deepseek-v4-pro`, the same exposed presets, and `high` as the benchmark default. Their Claude-runner counterparts pass the same fixed presets through Claude Code's `--effort` flag. Do not put the key in either model JSON or route these profiles through CC Switch.
+The bundled DeepSeek V4.1 Flash and V4 Pro profiles call the provider's official endpoint directly and both read only `DEEPSEEK_API_KEY`. Flash uses model ID `deepseek-flash`, the native Codex Responses path, a 1M context catalog, and the provider-supported `low`, `high`, and `max` reasoning presets with `max` as the benchmark default. Pro uses model ID `deepseek-v4-pro`, the same exposed presets, and `high` as the benchmark default. Their Claude-runner counterparts pass the same fixed presets through Claude Code's `--effort` flag. Do not put the key in either model JSON or route these profiles through CC Switch.
 
 ```powershell
 $env:DEEPSEEK_API_KEY = "paste-key-in-this-shell-only"

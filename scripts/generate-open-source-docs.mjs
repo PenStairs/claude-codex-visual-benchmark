@@ -95,6 +95,8 @@ ${rows}
 
 ## Bring your own model
 
+DeepSeek routing note (2026-09-12): the V4.1 Flash profiles replace the old V4 Flash entries and call the official \`deepseek-flash\` alias. DeepSeek also routes the legacy API name to V4.1 Flash; it no longer selects a separate old model. Historical run reports remain unchanged. See [configuration and official sources](../references/configuration.md#deepseek-v41-flash-verified-2026-09-12).
+
 Copy the closest example from [\`examples/custom-models\`](../examples/custom-models/) into \`config/models/\`, give it a unique profile ID, and keep credentials in environment variables. See [Add your model](add-your-model.md).
 
 > Model and product names are descriptive compatibility labels. This independent project is not affiliated with or endorsed by Anthropic, OpenAI, DeepSeek, or Zhipu AI.

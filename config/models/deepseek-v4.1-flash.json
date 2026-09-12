@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "deepseek-v4-flash",
-  "displayName": "DeepSeek V4 Flash",
+  "id": "deepseek-v4.1-flash",
+  "displayName": "DeepSeek V4.1 Flash",
   "enabled": true,
   "runner": "codex",
-  "model": "deepseek-v4-flash",
+  "model": "deepseek-flash",
   "provider": {
     "id": "deepseek",
     "name": "DeepSeek",
@@ -16,10 +16,17 @@
     "type": "environment",
     "environmentVariable": "DEEPSEEK_API_KEY"
   },
-  "modelCatalog": "config/model-catalogs/deepseek-v4-flash.json",
+  "modelCatalog": "config/model-catalogs/deepseek-v4.1-flash.json",
   "reasoning": {
     "default": "max",
-    "allowed": ["low", "high", "max"]
+    "allowed": [
+      "low",
+      "high",
+      "max"
+    ]
   },
-  "supportedMethods": ["threejs", "twigl"]
+  "supportedMethods": [
+    "threejs",
+    "twigl"
+  ]
 }

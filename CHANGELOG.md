@@ -6,6 +6,7 @@ All notable changes follow [Keep a Changelog](https://keepachangelog.com/en/1.1.
 
 ### Added
 
+- DeepSeek V4.1 Flash replaces the two legacy V4 Flash profiles for Codex and Claude Code, with max reasoning, native multimodal model metadata, official pricing checked on 2026-09-12, and routing notes; historical run artifacts are preserved.
 - GPT-6 Astra Codex profile with high reasoning, Three.js/Twigl support, and official API-equivalent pricing checked on 2026-09-06.
 - Public English and Chinese project documentation.
 - Generated model and prompt galleries with one detail page per prompt.
